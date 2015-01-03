@@ -21,16 +21,21 @@
 }
 
 .linkflair .title .linkflairlabel {
+  background: url(%%linkflair%%) no-repeat;
   color: transparent;
   font-size: 0;
-  margin-left: calc(100% - 539px);
+  margin-left: calc(100% - 545px);
   margin-top: -8px;
   height: 81px;
-  max-width: 25px;
-  width: 25px;
+  max-width: 32px;
+  width: 28px;
   position: absolute;
   z-index: 98;
   border-width: 0 0 0 0
+}
+
+@mixin pos($x: 0, $y: 0) {
+  background-position: #{- ($x * 32px)} 50% !important;
 }
 
 // For those on compressed display ** COUGHaperson **
@@ -42,86 +47,81 @@
 // Individual Styling
 // Flair - Announcements
 .linkflair-announcement .title .linkflairlabel {
-  background: url(%%gturk%%) no-repeat 50% !important
+  @include pos(0, 0);
 }
 
 .thing.linkflair.linkflair-announcement, .flairselector .linkflair-announcement {
-  border-right: 10px solid #d03e32;
+  border-right: 10px solid #A00;
 }
 
 // Flair - Survival
 .linkflair-survival .title .linkflairlabel {
-  background: url(%%gturk%%) no-repeat 50% !important
+  @include pos(1, 0);
 }
 
 .thing.linkflair.linkflair-survival, .flairselector .linkflair-survival {
-  border-right: 10px solid #3D585F;
+  border-right: 10px solid #0AA;
 }
 
 // Flair - Creative
 .linkflair-creative .title .linkflairlabel {
-  background: url(%%gturk%%) no-repeat 50% !important
+  @include pos(2, 0);
 }
 
 .thing.linkflair.linkflair-creative, .flairselector .linkflair-creative {
-  border-right: 10px solid #3D585F;
+  border-right: 10px solid #FA0;
 }
 
 // Flair - Command Blocks
 .linkflair-command .title .linkflairlabel {
-  background: url(%%gturk%%) no-repeat 50% !important
+  @include pos(3, 0);
 }
 
 .thing.linkflair.linkflair-command, .flairselector .linkflair-command {
-  border-right: 10px solid #32b1d0;
+  border-right: 10px solid #A0A;
 }
 
 // Flair - Redstone
 .linkflair-redstone .title .linkflairlabel {
-  background: url(%%gturk%%) no-repeat 50% !important;
-  border-color: #3D585F
+  @include pos(4, 0);
 }
 
 .thing.linkflair.linkflair-redstone, .flairselector .linkflair-redstone {
-  border-right: 10px solid #3D585F;
+  border-right: 10px solid #F55;
 }
 
 // Flair - Help
 .linkflair-help .title .linkflairlabel {
-  background: url(%%gturk%%) no-repeat 50% !important;
-  border-color: #3D585F
+  @include pos(5, 0);
 }
 
 .thing.linkflair.linkflair-help, .flairselector .linkflair-help {
-  border-right: 10px solid #3D585F;
-}
-
-// Flair Let's Plays
-.linkflair-lp .title .linkflairlabel {
-  background: url(%%gturk%%) no-repeat 50% !important;
-  border-color: #3D585F
-}
-
-.thing.linkflair.linkflair-lp, .flairselector .linkflair-lp {
-  border-right: 10px solid #3D585F;
-}
-
-// Flair - Art
-.linkflair-art .title .linkflairlabel {
-  background: url(%%gturk%%) no-repeat 50% !important;
-  border-color: #3D585F
-}
-
-.thing.linkflair.linkflair-art, .flairselector .linkflair-art {
-  border-right: 10px solid #3D585F;
+  border-right: 10px solid #FF5;
 }
 
 // Flair - Tutorials
 .linkflair-tutorial .title .linkflairlabel {
-  background: url(%%gturk%%) no-repeat 50% !important;
-  border-color: #3D585F
+  @include pos(6, 0);
 }
 
 .thing.linkflair.linkflair-tutorial, .flairselector .linkflair-tutorial {
-  border-right: 10px solid #3D585F;
+  border-right: 10px solid #0A0;
+}
+
+// Flair Let's Plays
+.linkflair-lp .title .linkflairlabel {
+  @include pos(7, 0);
+}
+
+.thing.linkflair.linkflair-lp, .flairselector .linkflair-lp {
+  border-right: 10px solid #F5F;
+}
+
+// Flair - Art
+.linkflair-art .title .linkflairlabel {
+  @include pos(8, 0);
+}
+
+.thing.linkflair.linkflair-art, .flairselector .linkflair-art {
+  border-right: 10px solid #55F;
 }
