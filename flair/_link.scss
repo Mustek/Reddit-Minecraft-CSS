@@ -1,0 +1,127 @@
+// Main styling for everything
+.linklisting .link {
+  min-height: 50px !important;
+  padding-left: 20px
+}
+
+.linklisting .link a:hover {
+  color: #418AD3
+}
+
+.linkflairlabel {
+  padding: 0 2px;
+  height: auto;
+  border-radius: 0;
+  color: #333;
+  font-weight: 700;
+  font-style: normal;
+  font-variant: normal;
+  font-size: 12px;
+  cursor: default
+}
+
+.linkflair .title .linkflairlabel {
+  color: transparent;
+  font-size: 0;
+  margin-left: calc(100% - 539px);
+  margin-top: -8px;
+  height: 81px;
+  max-width: 25px;
+  width: 25px;
+  position: absolute;
+  z-index: 98;
+  border-width: 0 0 0 0
+}
+
+// For those on compressed display ** COUGHaperson **
+.compressed-display .linkflair .title .linkflairlabel {
+  margin-left: calc(100% - 459px);
+  height: 71px;
+}
+
+// Individual Styling
+// Flair - Announcements
+.linkflair-announcement .title .linkflairlabel {
+  background: url(%%gturk%%) no-repeat 50% !important
+}
+
+.thing.linkflair.linkflair-announcement, .flairselector .linkflair-announcement {
+  border-right: 10px solid #d03e32;
+}
+
+// Flair - Survival
+.linkflair-survival .title .linkflairlabel {
+  background: url(%%gturk%%) no-repeat 50% !important
+}
+
+.thing.linkflair.linkflair-survival, .flairselector .linkflair-survival {
+  border-right: 10px solid #3D585F;
+}
+
+// Flair - Creative
+.linkflair-creative .title .linkflairlabel {
+  background: url(%%gturk%%) no-repeat 50% !important
+}
+
+.thing.linkflair.linkflair-creative, .flairselector .linkflair-creative {
+  border-right: 10px solid #3D585F;
+}
+
+// Flair - Command Blocks
+.linkflair-command .title .linkflairlabel {
+  background: url(%%gturk%%) no-repeat 50% !important
+}
+
+.thing.linkflair.linkflair-command, .flairselector .linkflair-command {
+  border-right: 10px solid #32b1d0;
+}
+
+// Flair - Redstone
+.linkflair-redstone .title .linkflairlabel {
+  background: url(%%gturk%%) no-repeat 50% !important;
+  border-color: #3D585F
+}
+
+.thing.linkflair.linkflair-redstone, .flairselector .linkflair-redstone {
+  border-right: 10px solid #3D585F;
+}
+
+// Flair - Help
+.linkflair-help .title .linkflairlabel {
+  background: url(%%gturk%%) no-repeat 50% !important;
+  border-color: #3D585F
+}
+
+.thing.linkflair.linkflair-help, .flairselector .linkflair-help {
+  border-right: 10px solid #3D585F;
+}
+
+// Flair Let's Plays
+.linkflair-lp .title .linkflairlabel {
+  background: url(%%gturk%%) no-repeat 50% !important;
+  border-color: #3D585F
+}
+
+.thing.linkflair.linkflair-lp, .flairselector .linkflair-lp {
+  border-right: 10px solid #3D585F;
+}
+
+// Flair - Art
+.linkflair-art .title .linkflairlabel {
+  background: url(%%gturk%%) no-repeat 50% !important;
+  border-color: #3D585F
+}
+
+.thing.linkflair.linkflair-art, .flairselector .linkflair-art {
+  border-right: 10px solid #3D585F;
+}
+
+// Flair - Tutorials
+.linkflair-tutorial .title .linkflairlabel {
+  background: url(%%gturk%%) no-repeat 50% !important;
+  border-color: #3D585F
+}
+
+.thing.linkflair.linkflair-tutorial, .flairselector .linkflair-tutorial {
+  border-right: 10px solid #3D585F;
+}

@@ -1,0 +1,496 @@
+.login-form-side {
+  background-color: #F5F5F5;
+  border-width: 3px 0 3px 0;
+  border-style: solid;
+  border-color: #C1BFBF;
+}
+
+.side .bottom {
+  display: none !important;
+}
+
+body:not(.search-page) #search {
+  text-align: center;
+}
+
+#search input[type="submit"] {
+  border: none !important;
+}
+
+#search input[type="text"] {
+  border: solid #C1BFBF;
+  border-width: 1px 0 !important;
+  text-align: center;
+  margin: 10px -10px 10px -20px;
+  width: 310px;
+  font-size: 140% !important;
+  background: rgba(0, 0, 0, 0.59);
+  color: white;
+}
+
+#previoussearch input[type="text"] {
+  background: #FFF;
+  color: #000;
+  border: 1px solid;
+}
+
+#search input::-webkit-input-placeholder {
+  margin-left: 120px;
+  text-align: center;
+  color: #CCC;
+}
+
+#search input::-moz-placeholder {
+  margin-left: 120px;
+  text-align: center;
+  color: #CCC;
+}
+
+.side .md {
+  overflow: hidden;
+}
+
+.flat-vert.icon-menu.hover a {
+  background-color: #F5F5F5 !important;
+}
+
+.side {
+  width: 300px;
+  margin: 30px 20px 20px 10px;
+  padding: 5px !important;
+  z-index: 0;
+  border-left: 1px solid #EDEDED;
+  border-right: 1px solid #EDEDED;
+  box-shadow: 0 1px 3px 1px #C0C0C0;
+  overflow: hidden;
+  background: url(%%grass-new%%) #FFF repeat-x;
+}
+
+.side hr {
+  visibility: hidden;
+}
+
+.side blockquote {
+  display: block;
+  background-color: #F5F5F5;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #C1BFBF;
+  margin: 0 0 5px;
+  padding: 5px;
+  box-shadow: 0 1px 2px #C0C0C0;
+}
+
+.sidecontentbox .content {
+  display: block;
+  background-color: #F5F5F5;
+  border-width: 1px 0;
+  border-style: solid;
+  border-color: #C1BFBF;
+  box-shadow: 0 1px 2px #C0C0C0;
+  margin: 0 0 5px;
+  padding: 5px;
+}
+
+.sidecontentbox a.helplink {
+  margin: 0;
+}
+
+#searchexpando {
+  color: white;
+  border-radius: 0 !important;
+  border-color: #C1BFBF;
+  background-color: rgba(0, 0, 0, 0.59);
+  width: 314px;
+  margin-left: -12px !important;
+}
+
+#searchexpando a {
+  color: yellow;
+}
+
+// sidebar dropdown menus
+.titlebox .md ul {
+  margin: 0 0;
+  display: inline-block;
+}
+
+.titlebox li li {
+  color: red;
+  display: none;
+  padding: 3px 3px 3px 10px !important;
+  text-align: left;
+  margin: 0;
+}
+
+.titlebox ul li:not(.flairsample-left) {
+  color: black;
+  border: 0;
+  padding: 2px 0 0 0;
+  width: 300px;
+}
+
+.titlebox li li:before {
+  content: '' !important;
+}
+
+.titlebox ul li:not(.flairsample-left):before {
+  content: '▹';
+}
+
+.titlebox ul li:not(.flairsample-left):hover::before {
+  content: '▾';
+}
+
+.titlebox li:hover li {
+  display: block;
+}
+
+// sidebar submit buttons
+.morelink .nub {
+  background: none !important;
+}
+
+.morelink {
+  border: 0;
+  background: #EFEFEF !important;
+  color: #333333;
+}
+
+.morelink:hover {
+  background: #C9D6E2 !important;
+  border-color: #C1BFBF;
+}
+
+.morelink a {
+  color: #333333;
+}
+
+.morelink:hover a {
+  text-decoration: none !important;
+  color: #333333;
+}
+
+// sidebar icons stolen from rolmos's edurne theme
+.side a[href*='#icon-'] {
+  color: #000 !important;
+  cursor: default;
+}
+
+.side a[href*='#icon-']:hover {
+  text-decoration: none;
+}
+
+.side a[href*='#icon-']::before {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  content: '';
+  margin: 0 5px -3px 0;
+  background: url(%%sprites-05%%) 30px 30px no-repeat;
+}
+
+.side a[href='#icon-exclamation']::before {
+  background-position: -16px -32px;
+}
+
+.side a[href='#icon-information']::before {
+  background-position: -54px -51px;
+}
+
+.side a[href='#icon-lightbulb']::before {
+  background-position: -16px -51px;
+}
+
+.side a[href='#icon-comments']::before {
+  background-position: -35px -89px;
+}
+
+.side a[href='#icon-unhappy']::before {
+  background-position: -73px -89px;
+}
+
+.side a[href='#icon-check']::before {
+  background-position: -73px -51px;
+}
+
+.side a[href='#icon-clock']::before {
+  background-position: -35px -51px;
+}
+
+.side a[href='#icon-cross']::before {
+  background-position: -35px -70px;
+}
+
+.side a[href='#icon-smile']::before {
+  background-position: -54px -89px;
+}
+
+.side a[href='#icon-error']::before {
+  background-position: -54px -32px;
+}
+
+.side a[href='#icon-note']::before {
+  background-position: -54px -70px;
+}
+
+.side a[href='#icon-star']::before {
+  background-position: -73px -32px;
+}
+
+.side a[href='#icon-help']::before {
+  background-position: -16px -70px;
+}
+
+.side a[href='#icon-time']::before {
+  background-position: -73px -70px;
+}
+
+.side a[href='#icon-bell']::before {
+  background-position: -35px -32px;
+}
+
+.side a[href='#icon-eye']::before {
+  background-position: -16px -89px;
+}
+
+// lets put the mess of buttons and info in something that looks like a box
+.side .redditname {
+  display: block;
+  background-color: #F5F5F5;
+  border: 0 solid #C1BFBF;
+  border-top-width: 1px;
+  margin: 5px 0 0 0;
+  padding: 5px;
+}
+
+.side .redditname {
+  margin-bottom: -27px !important;
+  padding-bottom: 29px !important;
+}
+
+.styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.leavecontributor-button {
+  display: block;
+  background-color: #F5F5F5 !important;
+  border: 0;
+  margin: 0;
+  padding: 5px;
+}
+
+.subscribers {
+  margin-top: -29px !important;
+  padding-top: 29px !important;
+}
+
+.side .tagline {
+  display: block;
+  background-color: #F5F5F5;
+  border: 0 solid #C1BFBF;
+  border-bottom-width: 1px;
+  box-shadow: 0 1px 2px #C0C0C0;
+  margin: 0 0 0 0 !important;
+  padding: 5px;
+}
+
+.side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body) {
+  display: block !important;
+  background-color: #F5F5F5;
+  border: 0 !important;
+  margin: 0 !important;
+  padding: 5px !important;
+}
+
+// the subscribe and res buttons
+.fancy-toggle-button .remove {
+  background: #DD513B none;
+  border-radius: 0 !important;
+}
+
+.fancy-toggle-button .add {
+  background: #4D6277 none;
+  border-radius: 0 !important;
+  margin-left: 5px;
+}
+
+.subButtons .RESshortcutside {
+  width: auto;
+  display: inline-block;
+}
+
+.RESshortcutside, .RESDashboardToggle {
+  color: white;
+  background: #4D6277 none !important;
+  border-radius: 0 !important;
+}
+
+.RESshortcutside:hover, .RESDashboardToggle :hover {
+  color: white;
+  background: #4D6277 none !important;
+  border-radius: 0 !important;
+}
+
+.RESshortcutside.remove, .RESDashboardToggle.remove {
+  color: white;
+  background: #DD513B none !important;
+  border-radius: 0 !important;
+}
+
+.RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover {
+  color: white;
+  background: #DD513B none !important;
+  border-radius: 0 !important;
+}
+
+// Sticky, edit text in the sidebar
+.side .md h3:nth-of-type(1) {
+  position: absolute;
+  top: 67px;
+  left: 0;
+  display: block;
+  border-bottom: 0;
+  box-shadow: 0 1px 3px 1px #C0C0C0;
+  background: #FFFFFF;
+  text-align: left;
+
+  color: #333333;
+  font-weight: bold;
+  padding: 7px 7px 7px 27px;
+  right: 0;
+}
+
+// Link info (Votes + short url)
+.linkinfo {
+  color: #FFF;
+  text-align: center;
+  width: 300px;
+  margin: 5px auto 10px -6px;
+  padding: 10px 5px 15px;
+  border-radius: 0 !important;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #C1BFBF !important;
+}
+
+.linkinfo .score .number {
+  font-weight: bold !important;
+  font-size: 18px;
+}
+
+.linkinfo .score {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.linkinfo .upvotes, .linkinfo .downvotes {
+  padding-top: 10px !important;
+  height: 30px;
+}
+
+.linkinfo .shortlink {
+  clear: both !important;
+
+  margin: 0 20px 0 20px;
+  text-align: center;
+}
+
+.linkinfo .shortlink input {
+  background: transparent;
+  color: #FFF;
+  border: 0 !important;
+  padding-left: 8px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.linkinfo .date {
+  padding: 8px;
+  margin-top: -10px;
+  margin-bottom: 7px;
+  color: #FFF;
+}
+
+.linkinfo .score .number {
+  font-size: 22px !important;
+}
+
+.sidebox.submit-text {
+  //display: none; uncomment to hide submit text button
+}
+
+.sidebox.create {
+  display: none;
+}
+
+.morelink {
+  background: url(%%buttons%%) 0 -40px !important;
+  height: 40px !important;
+  line-height: 40px;
+}
+
+.morelink:hover {
+  background: url(%%buttons%%) 0 -80px !important;
+}
+
+.morelink:active {
+  background: url(%%buttons%%) 0 -120px !important;
+}
+
+.morelink a {
+  color: white !important;
+}
+
+// Status icons for the server status
+a[href^="#status_green"], a[href^="#status_red"] {
+  display: inline-block;
+  height: 32px !important;
+  background: transparent url(%%sub-servers%%) no-repeat scroll 0 -32px;
+  vertical-align: middle;
+  width: 32px;
+  border: 0;
+  cursor: default;
+  text-indent: -9999px !important;
+  padding: 0 !important;
+  margin-bottom: 2px;
+  margin-top: 0 !important;
+  font-size: 1.1em !important;
+}
+
+a[href^="#status_green_login"] {
+  background-position: 0 0;
+}
+
+a[href^="#status_green_realms"] {
+  background-position: -32px 0;
+}
+
+a[href^="#status_green_session"] {
+  background-position: -64px 0;
+}
+
+a[href^="#status_green_website"] {
+  background-position: -96px 0;
+}
+
+a[href^="#status_green_skins"] {
+  background-position: -128px 0;
+}
+
+a[href^="#status_red_login"] {
+  background-position: 0 -32px;
+}
+
+a[href^="#status_red_realms"] {
+  background-position: -32px -32px;
+}
+
+a[href^="#status_red_session"] {
+  background-position: -64px -32px;
+}
+
+a[href^="#status_red_website"] {
+  background-position: -96px -32px;
+}
+
+a[href^="#status_red_skins"] {
+  background-position: -128px -32px;
+}

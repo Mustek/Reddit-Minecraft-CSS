@@ -1,0 +1,27 @@
+/* == Boxed reddit CSS Theme v1.5 - (http://www.reddit.com/r/boxed/)== */
+/* == Changes by /u/Mustek, /u/aperson and /u/redstonehelper. Additional graphics by /u/enchilado */
+
+/* General markup */
+@import 'layout/header';
+@import 'layout/sidebar';
+@import 'layout/main';
+@import 'layout/wiki';
+@import 'layout/misc';
+
+/* Random background mobs */
+@import 'misc/backgrounds';
+
+/* Post Flair */
+@import 'flair/link';
+
+/* User Flair */
+@import 'flair/user';
+
+/* Sprites (Big blob, sorry :D) */
+@import 'sprites/items';
+@import 'sprites/blocks';
+@import 'sprites/mobs';
+//@import 'sprites/redstone';
+
+/* RES Hacks and Fixes */
+@import 'misc/res';

@@ -1,0 +1,57 @@
+#RESShortcutsEditContainer, #RESShortcutsRight, #RESShortcutsAdd, #RESShortcutsTrash, #RESShortcutsLeft, #sr-more-link, #RESShortcutsSort {
+  background-color: #FAFAFA !important;
+}
+
+.keyHighlight, .RES-keyNav-activeElement, div .RES-keyNav-activeElement {
+  outline-width: 0 !important;
+  border-left: 5px solid #AAAAAA;
+  background: transparent !important;
+}
+
+// >> Change location of the currently selected element marker
+.RES-keyNav-activeElement {
+  border-left: 0 !important;
+  border-right: 5px solid #AAAAAA;
+}
+// << Change location of the currently selected element marker
+
+// >> RES neverending reddit fixes
+#progressIndicator {
+  margin-left: 20px !important;
+  border-radius: 0 !important;
+  box-shadow: 0 1px 3px 1px #C0C0C0;
+  width: 97% !important;
+  margin-top: 5px !important;
+  background-color: #F5F5F5;
+  border-color: #C1BFBF !important;
+}
+
+.linklisting .linklisting {
+  margin-left: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.NERPageMarker, body .content #progressIndicator {
+  background-color: #F5F5F5 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  margin-right: 20px !important;
+  box-shadow: 0 1px 3px 1px #C0C0C0 !important;
+  width: auto !important;
+}
+
+#NERFail {
+  width: 99% !important;
+  height: auto !important;
+  border-width: 0 !important;
+}
+// << RES neverending reddit fixes
+
+// Attempts to disrupt RES from hiding CSS styles
+body.res:lang(np):not(.subscriber) div.titlebox > div[style*='display: block !important'] input:before,
+body.res:lang(np):not(.subscriber) div.titlebox > div[style*='display: block !important'] label:before,
+body.res:lang(np):not(.subscriber) > div#keyCommandLineWidget > form:before {
+  content: 'Removed by NoParticipation' !important;
+  margin-left: -10000px !important;
+}

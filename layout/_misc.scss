@@ -1,0 +1,282 @@
+/* Make distinguished users stand out more (mods, op and friends) */
+.tagline .author.submitter {
+  color: white !important;
+  background-color: #0055df !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+  padding: 0 2px !important;
+}
+
+.tagline .author.moderator {
+  color: white !important;
+  background-color: #228822 !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+  padding: 0 2px !important;
+}
+
+.tagline .author.moderator::after {
+  content: ", speaking officially";
+  background-color: transparent !important;
+}
+
+.tagline .author.moderator.id-t2_6997u::after {
+  content: ", speaking automatically";
+}
+
+.tagline .author.friend {
+  color: white !important;
+  background-color: #FF4500 !important;
+  font-weight: bold !important;
+  border-radius: 0 !important;
+  padding: 0 2px !important;
+}
+
+// Hover bars
+// > Generic Code
+.side .titlebox a[href='#hoverbar']:hover:before, .sidebox.submit:hover:before, .helplink:hover:before, .report-button > span.option.error:before, .submit-page button.btn:hover:before, .comment .arrow.down:hover:before {
+  position: fixed;
+  height: 36px;
+  line-height: 100%;
+  display: block;
+  bottom: 0;
+  text-align: center;
+  border-left: 10px solid #E18879;
+  border-top: 2px solid rgb(145, 145, 145);
+  color: #E18879;
+  z-index: 9000;
+  padding: 5px 0;
+  width: 100%;
+  left: 0;
+  font-size: 32px;
+  font-weight: normal;
+  background: #FAFAFA url(%%testibg%%) no-repeat 100% 0;
+}
+
+// > Specific texts
+.sidebox.submit:hover:before {
+  content: "Please read the rules before posting."
+}
+
+.helplink:hover:before {
+  content: "Is your submission stuck? Please include a link to it."
+}
+
+.report-button > span.option.error:before {
+  content: "Does this break the subreddit rules?"
+}
+
+.submit-page button.btn:hover:before {
+  content: "Did you read the red box?"
+}
+
+.comment .arrow.down:hover:before {
+  content: "Don't downvote based on opinion!"
+}
+
+// > Custom hoverbar: [text to be hovered on](#hoverbar 'text to be displayed')
+.side .titlebox a[href='#hoverbar'] {
+  color: grey !important
+}
+
+.side .titlebox a[href='#hoverbar']:hover:before {
+  content: attr(title)
+}
+
+// MODMAIL and MAIL icons
+#mail.nohavemail, #mail.havemail, #modmail.havemail, #modmail.nohavemail {
+  background: url(%%sub-sprites%%) no-repeat;
+}
+
+#mail.nohavemail {
+  background-position: 0 -19px;
+}
+
+#mail.havemail {
+  background-position: 0 -3px;
+}
+
+#modmail.nohavemail {
+  background-position: -16px -15px;
+}
+
+#modmail.havemail {
+  background-position: -16px 2px;
+}
+
+// Expando Icons
+.expando-button.image.expanded, .expando-button.image.collapsedExpando, .expando-button.image.expanded:hover, .expando-button.image.collapsedExpando:hover,
+.expando-button.selftext.expanded, .expando-button.selftext.collapsed, .expando-button.selftext.expanded:hover, .expando-button.selftext.collapsed:hover,
+.expando-button.video.expanded, .expando-button.video.collapsed, .expando-button.video.expanded:hover, .expando-button.video.collapsed:hover {
+  background: url(%%sub-sprites%%) no-repeat;
+  width: 21px;
+  height: 21px;
+}
+
+.expando-button.image.collapsedExpando {
+  background-position: -21px -32px !important;
+}
+
+.expando-button.image.collapsedExpando:hover {
+  background-position: -21px -53px !important;
+}
+
+.expando-button.image.expanded {
+  background-position: -21px -74px !important;
+}
+
+.expando-button.image.expanded:hover {
+  background-position: -21px -95px !important;
+}
+
+.expando-button.selftext.collapsed {
+  background-position: 0 -32px !important;
+}
+
+.expando-button.selftext.collapsed:hover {
+  background-position: 0 -53px !important;
+}
+
+.expando-button.selftext.expanded {
+  background-position: 0 -74px !important;
+}
+
+.expando-button.selftext.expanded:hover {
+  background-position: 0 -95px !important;
+}
+
+.expando-button.video.collapsed {
+  background-position: -42px -32px !important;
+}
+
+.expando-button.video.collapsed:hover {
+  background-position: -42px -53px !important;
+}
+
+.expando-button.video.expanded {
+  background-position: -42px -74px !important;
+}
+
+.expando-button.video.expanded:hover {
+  background-position: -42px -95px !important;
+}
+
+// cakeday icon
+.tagline .userattrs .cakeday {
+  width: 0;
+  height: 16px;
+  background: transparent url(%%items%%) no-repeat scroll -207px -16px;
+  text-indent: -9999px;
+  padding-right: 18px;
+  margin-bottom: 4px;
+}
+
+// style the give gold button on comments
+span.gilded-icon:before {
+  width: 16px !important;
+  height: 16px;
+  content: " ";
+  display: inline-block;
+  cursor: default;
+  background: url(%%items%%) -112px -32px;
+}
+
+.give-gold {
+  color: #9A7D2E !important;
+}
+
+// Make sure it doesn't fuck up if you gave the gold
+.user-gilded > .entry span.gilded-comment-icon::before {
+  width: 16px;
+}
+
+// Autowikibot hover to display by /u/Dropping_fruits
+.comment .md h5 + h6 + h4 + p, .comment .md h5 + h6 + h4 + p + hr, .comment .md h5 + h6 + h4 + p + hr + blockquote, .comment .md h5 + h6 + h4 + p + hr + blockquote + hr, .comment .md h5 + h6 + h4 + p + hr + blockquote + hr + p, .comment .md h5 + h6 + h4 + p + hr + blockquote + hr + p + p {
+  display: none !important;
+}
+
+.comment .md:hover h5 + h6 + h4 + p, .comment .md:hover h5 + h6 + h4 + p + hr, .comment .md:hover h5 + h6 + h4 + p + hr + blockquote, .comment .md:hover h5 + h6 + h4 + p + hr + blockquote + hr, .comment .md:hover h5 + h6 + h4 + p + hr + blockquote + hr + p, .comment .md:hover h5 + h6 + h4 + p + hr + blockquote + hr + p + p {
+  display: block !important;
+}
+
+.comment .md h5 + h6 + h4:after {
+  content: "Autowikibot post. Hover to view." !important;
+}
+
+.comment .md h5 + h6 + h4:before {
+  width: 16px;
+  height: 16px;
+  content: " ";
+  display: inline-block;
+  cursor: default;
+  text-indent: -9999px;
+  background: url(%%items%%) -176px 0;
+}
+
+.comment .md:hover h5 + h6 + h4:after, .comment .md:hover h5 + h6 + h4:before {
+  display: none
+}
+
+// The derpy squid
+p#noresults {
+  background: url(%%squid-bubble%%) no-repeat;
+  width: 362px;
+  height: 400px;
+  padding-top: 30px;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  position: absolute;
+  left: 56px;
+  margin: 50px 0 0 -300px
+}
+
+// Something mildly fun for the mods
+.leavemoderator:before {
+  width: 15px !important;
+  margin-top: -2px;
+  margin-right: 5px !important;
+  background: url(%%items%%) -112px -48px !important;
+}
+
+// Change players online icon to char.png
+.users-online:before {
+  background: transparent url(%%flair%%) no-repeat scroll 0 -128px;
+  height: 16px !important;
+  width: 16px;
+}
+
+// Change the readers/users online bits
+div.titlebox span.word {
+  display: none;
+}
+
+div.titlebox span.number {
+  font-size: 95%
+}
+
+div.titlebox span.number:after {
+  content: " bridges reposted... again..."
+}
+
+div.titlebox .users-online span.word {
+  display: none;
+}
+
+div.titlebox .users-online span.number:after {
+  content: " players online";
+}
+
+// Highlight hovered-on row on revision listings
+.wikirevisionlisting tr:hover {
+  background-color: #DDD !important;
+}
+
+#header .redditname {
+  color: white;
+}
+
+// always show report reasons
+ul.report-reasons.rounded {
+  display: block;
+}

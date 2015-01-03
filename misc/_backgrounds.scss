@@ -1,0 +1,151 @@
+/* This is our pseudo-random background changer thanks to some help from DEADB33F */
+div.thing.link:first-child:after {
+  position: fixed;
+  bottom: -2px;
+  right: 30%;
+  z-index: -1;
+}
+
+div.thing.link:first-child[data-fullname$="0"]:after {
+  content: url(%%creeperbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="1"]:after {
+  content: url(%%testificatebg%%)
+}
+
+div.thing.link:first-child[data-fullname$="2"]:after {
+  content: url(%%pigbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="3"]:after {
+  content: url(%%endermanbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="4"]:after {
+  content: url(%%sheepbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="5"]:after {
+  content: url(%%cowbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="6"]:after {
+  content: url(%%catbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="7"]:after {
+  content: url(%%zombiebg%%)
+}
+
+div.thing.link:first-child[data-fullname$="8"]:after {
+  content: url(%%skeletonbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="9"]:after {
+  content: url(%%chickenbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="a"]:after {
+  content: url(%%ghastbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="b"]:after {
+  content: url(%%pigmanbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="c"]:after {
+  content: url(%%creeperbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="d"]:after {
+  content: url(%%testificatebg%%)
+}
+
+div.thing.link:first-child[data-fullname$="e"]:after {
+  content: url(%%pigbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="f"]:after {
+  content: url(%%endermanbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="g"]:after {
+  content: url(%%sheepbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="h"]:after {
+  content: url(%%cowbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="i"]:after {
+  content: url(%%catbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="j"]:after {
+  content: url(%%zombiebg%%)
+}
+
+div.thing.link:first-child[data-fullname$="k"]:after {
+  content: url(%%skeletonbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="l"]:after {
+  content: url(%%chickenbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="m"]:after {
+  content: url(%%ghastbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="n"]:after {
+  content: url(%%pigmanbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="o"]:after {
+  content: url(%%creeperbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="p"]:after {
+  content: url(%%testificatebg%%)
+}
+
+div.thing.link:first-child[data-fullname$="q"]:after {
+  content: url(%%pigbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="r"]:after {
+  content: url(%%endermanbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="s"]:after {
+  content: url(%%sheepbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="t"]:after {
+  content: url(%%cowbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="u"]:after {
+  content: url(%%catbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="v"]:after {
+  content: url(%%zombiebg%%)
+}
+
+div.thing.link:first-child[data-fullname$="w"]:after {
+  content: url(%%skeletonbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="x"]:after {
+  content: url(%%chickenbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="y"]:after {
+  content: url(%%ghastbg%%)
+}
+
+div.thing.link:first-child[data-fullname$="z"]:after {
+  content: url(%%herobrinebg%%)
+}

@@ -1,0 +1,269 @@
+.mobs {
+  width: 16px;
+  height: 16px;
+  content: " ";
+  background-image: url(%%flair%%);
+  display: inline-block;
+  cursor: default;
+}
+
+.usertext-body a {
+  display: inline-block;
+}
+
+@mixin pos($x: 0, $y: 0) {
+  background-position: #{- ($x * 16) + px} #{- ($y * 16) + px};
+}
+
+a[href="/blaze"] {
+  @extend .mobs;
+  @include pos(0, 0);
+}
+
+a[href="/cavespider"] {
+  @extend .mobs;
+  @include pos(0, 1);
+}
+
+a[href="/chicken"] {
+  @extend .mobs;
+  @include pos(0, 2);
+}
+
+a[href="/cow"] {
+  @extend .mobs;
+  @include pos(0, 3);
+}
+
+a[href="/creeper"] {
+  @extend .mobs;
+  @include pos(0, 4);
+}
+
+a[href="/enderdragon"] {
+  @extend .mobs;
+  @include pos(0, 5);
+}
+
+a[href="/enderman"] {
+  @extend .mobs;
+  @include pos(0, 6);
+}
+
+a[href="/ghast"] {
+  @extend .mobs;
+  @include pos(0, 7);
+}
+
+a[href="/steve"] {
+  @extend .mobs;
+  @include pos(0, 8);
+}
+
+a[href="/magmacube"] {
+  @extend .mobs;
+  @include pos(0, 9);
+}
+
+a[href="/mooshroom"] {
+  @extend .mobs;
+  @include pos(0, 10);
+}
+
+a[href="/pig"] {
+  @extend .mobs;
+  @include pos(0, 11);
+}
+
+a[href="/sheep"] {
+  @extend .mobs;
+  @include pos(0, 12);
+}
+
+a[href="/silverfish"] {
+  @extend .mobs;
+  @include pos(0, 13);
+}
+
+a[href="/skeleton"] {
+  @extend .mobs;
+  @include pos(0, 14);
+}
+
+a[href="/slime"] {
+  @extend .mobs;
+  @include pos(0, 15);
+}
+
+a[href="/snowgolem"] {
+  @extend .mobs;
+  @include pos(0, 16);
+}
+
+a[href="/spider"] {
+  @extend .mobs;
+  @include pos(0, 17);
+}
+
+a[href="/squid"] {
+  @extend .mobs;
+  @include pos(0, 18);
+}
+
+a[href="/testificate"] {
+  @extend .mobs;
+  @include pos(0, 19);
+}
+
+a[href="/wolf"] {
+  @extend .mobs;
+  @include pos(0, 20);
+}
+
+a[href="/zombie"] {
+  @extend .mobs;
+  @include pos(0, 21);
+}
+
+a[href="/zombiepigman"] {
+  @extend .mobs;
+  @include pos(0, 22);
+}
+
+a[href="/sheep_lightgray"] {
+  @extend .mobs;
+  @include pos(0, 24);
+}
+
+a[href="/sheep_gray"] {
+  @extend .mobs;
+  @include pos(0, 25);
+}
+
+a[href="/sheep_black"] {
+  @extend .mobs;
+  @include pos(0, 26);
+}
+
+a[href="/sheep_brown"] {
+  @extend .mobs;
+  @include pos(0, 27);
+}
+
+a[href="/sheep_pink"] {
+  @extend .mobs;
+  @include pos(0, 28);
+}
+
+a[href="/sheep_red"] {
+  @extend .mobs;
+  @include pos(0, 29);
+}
+
+a[href="/sheep_orange"] {
+  @extend .mobs;
+  @include pos(0, 30);
+}
+
+a[href="/sheep_yellow"] {
+  @extend .mobs;
+  @include pos(0, 31);
+}
+
+a[href="/sheep_lime"] {
+  @extend .mobs;
+  @include pos(0, 32);
+}
+
+a[href="/sheep_green"] {
+  @extend .mobs;
+  @include pos(0, 33);
+}
+
+a[href="/sheep_lightblue"] {
+  @extend .mobs;
+  @include pos(0, 34);
+}
+
+a[href="/sheep_cyan"] {
+  @extend .mobs;
+  @include pos(0, 35);
+}
+
+a[href="/sheep_blue"] {
+  @extend .mobs;
+  @include pos(0, 36);
+}
+
+a[href="/sheep_purple"] {
+  @extend .mobs;
+  @include pos(0, 37);
+}
+
+a[href="/sheep_magenta"] {
+  @extend .mobs;
+  @include pos(0, 38);
+}
+
+a[href="/ozelot"] {
+  @extend .mobs;
+  @include pos(0, 39);
+}
+
+a[href="/cat_siamese"] {
+  @extend .mobs;
+  @include pos(0, 40);
+}
+
+a[href="/cat_red"] {
+  @extend .mobs;
+  @include pos(0, 41);
+}
+
+a[href="/cat_black"] {
+  @extend .mobs;
+  @include pos(0, 42);
+}
+
+a[href="/iron_golem"] {
+  @extend .mobs;
+  @include pos(0, 47);
+}
+
+a[href="/zombievillager"] {
+  @extend .mobs;
+  @include pos(0, 50);
+}
+
+a[href="/wither"] {
+  @extend .mobs;
+  @include pos(0, 51);
+}
+
+a[href="/witherskeleton"] {
+  @extend .mobs;
+  @include pos(0, 52);
+}
+
+a[href="/bat"] {
+  @extend .mobs;
+  @include pos(0, 55);
+}
+
+a[href="/witch"] {
+  @extend .mobs;
+  @include pos(0, 56);
+}
+
+// These aren't mobs, but they use the same image and we secretly
+// want these in our sprite codes.
+
+a[href="/mojang"] {
+  @extend .mobs;
+  @include pos(0, 23);
+}
+
+a[href="/rftw"] {
+  @extend .mobs;
+  @include pos(0, 43);
+}

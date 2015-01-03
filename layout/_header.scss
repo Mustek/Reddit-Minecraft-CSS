@@ -1,0 +1,175 @@
+// Settings
+$link-color: #FFF;
+$link-selected: #FF966F;
+$bg-color: #313131;
+
+
+html {
+  position: relative;
+}
+
+body {
+  background-color: #CFCFCF;
+  color: #000000;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+input {
+  border: 1px solid #C1BFBF !important;
+}
+
+// Reddit name
+.hover.pagename.redditname {
+  display: inline-table;
+  letter-spacing: 2px;
+  font-variant: normal;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.hover.pagename.redditname a {
+  display: table-cell;
+  vertical-align: bottom;
+  color: $link-color;
+  font-variant: small-caps;
+}
+
+/* Header markup */
+
+#sr-header-area {
+  text-transform: lowercase;
+}
+
+#sr-header-area a {
+
+}
+
+#userbarToggle.userbarHide, #userbarToggle.userbarShow {
+  border: 0;
+  background-color: white;
+  color: black;
+  width: 6px;
+  left: 0 !important;
+}
+
+#userbarToggle.userbarShow {
+  width: 26px !important;
+  text-align: center;
+}
+
+#header {
+  border-bottom: 1px solid #9A9A9A !important;
+  box-shadow: 0 1px 3px 1px #B3C2D1;
+  background: url(%%rock%%) $bg-color;
+}
+
+/* seekret */
+html:lang(tk) #header {
+  background: url(%%grass%%) bottom left;
+}
+
+html:lang(xx) #header {
+  background: url(%%stonebrick%%) bottom left;
+}
+
+html:lang(me) #header {
+  background: url(%%melon%%) bottom left;
+}
+
+html:lang(ok) #header {
+  background: url(%%netherbrick%%) bottom left;
+}
+
+html:lang(le) #header {
+  background: url(%%lapis%%) bottom left;
+}
+
+html:lang(bb) #header {
+  background: url(%%brick%%) bottom left;
+}
+
+#header-img {
+  margin-top: 8px !important;
+  margin-bottom: -6px !important;
+  margin-right: 0 !important;
+}
+
+#sr-header-area {
+  background-color: #FAFAFA;
+  color: #333333;
+  border-bottom: 1px solid #9A9A9A !important;
+}
+
+#header-bottom-right {
+  background-color: #FFFFFF;
+  color: #333333;
+  border: 0 solid #9A9A9A !important;
+  top: 71px !important; /* 400k logo change, this is to be 78px for 400k logo */
+  height: 21px !important;
+  line-height: 21px !important;
+  vertical-align: middle !important;
+  padding: 3px 25px 2px 5px !important;
+  margin-right: 0;
+}
+
+.pinHeader-subanduser #header-bottom-right {
+  top: 19px !important;
+}
+
+.pinHeader-userbar #header-bottom-right {
+  top: 0 !important;
+}
+
+#header-bottom-right * {
+  vertical-align: bottom !important;
+}
+
+#header-bottom-right a {
+  color: #333333;
+}
+
+#header-bottom-right #mail {
+  top: -4px !important;
+  bottom: auto;
+  width: 16px;
+
+}
+
+#header-bottom-right #modmail {
+  margin: 0;
+
+  top: -3px !important;
+  bottom: auto;
+}
+
+#RESSettingsButton {
+  margin: auto auto 2px;
+}
+
+/* Header tab menu */
+
+#header-bottom-left .tabmenu li a {
+  border: 0 !important;
+  background: transparent;
+  color: $link-color;
+  margin: 0 !important;
+  font-size: 14px !important;
+  font-weight: normal;
+  padding: 0 12px;
+
+}
+
+#header-bottom-left .tabmenu li {
+  margin: 1px;
+}
+
+#header-bottom-left .tabmenu li.selected a {
+  border: 0 !important;
+  background: transparent;
+  color: $link-selected;
+  font-weight: bold;
+
+}

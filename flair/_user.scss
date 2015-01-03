@@ -1,0 +1,48 @@
+.flair {
+  background: url(%%flair%%) no-repeat scroll -9999px -9999px transparent;
+  height: 16px;
+  vertical-align: middle;
+  width: 16px;
+  border: 0;
+  text-indent: -9999px;
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  padding: 0 !important;
+  margin-bottom: 2px;
+  margin-top: 0 !important;
+  font-size: 1.1em !important;
+}
+
+/* Show the flair text on hover */
+.flair:hover {
+  width: auto;
+  min-width: 16px;
+  text-indent: 18px;
+}
+
+.flair-rftw:hover {
+  background-color: #184E13 !important;
+  color: white;
+  border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  padding-right: 2px !important
+}
+
+@mixin pos($y: 0) {
+  background-position: 0 #{- ($y * 16px)};
+}
+
+// Just add the name to the end of the list, the rest happens automagically.
+// ! Make sure to keep them in order of appearance on the spritesheet.
+// TODO: When a new flair gets added, please use the NULL slot first. Thx!
+$flairs: blaze cavespider chicken cow creeper enderdragon enderman ghast steve magmacube mooshroom pig sheep silverfish skeleton slime snowgolem spider squid testificate wolf zombie zombiepigman mojang lightgraysheep graysheep blacksheep brownsheep pinksheep redsheep orangesheep yellowsheep limesheep greensheep lightbluesheep cyansheep bluesheep purplesheep magentasheep ozelot catsiamese catred catvlack rftw redstonehelper painting bukkit irongolem lapis gold-hoe zombievillager wither witherskeleton bookquill poweredlamp bat witch musicward purpletile cookie oaksapling horse pufferfish endermite iron-shovel plankton elder wabbit NULL mojangex;
+
+@each $entry in $flairs {
+
+  $i: index($flairs, $entry) - 1;
+  .flair-#{$entry} {
+    @include pos($i);
+  }
+}
