@@ -613,6 +613,10 @@ body:lang(np):not(.subscriber) .entry.dislikes:not(.reddit-entry):before {
   background-color: #E88974 !important;
 }
 
+.link .entry li .flairselectbtn {
+  font-weight: bold;
+}
+
 /* This adds a little info box about downvoting */
 .commentarea > div.sitetable:before {
   content: "Please don't downvote comments based on opinion. The downvote arrow is for comments which add nothing to the discussion and might as well not be there.";
