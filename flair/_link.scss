@@ -34,6 +34,10 @@
   border-width: 0 0 0 0
 }
 
+.thing.linkflair, .flairselector {
+  border-right: 10px solid #93A1A1;
+}
+
 @mixin pos($x: 0, $y: 0) {
   background-position: #{- ($x * 32px)} 50% !important;
 }
@@ -51,7 +55,7 @@
 }
 
 .thing.linkflair.linkflair-announcement, .flairselector .linkflair-announcement {
-  border-right: 10px solid #A00;
+  border-right: 10px solid #DC322F;
 }
 
 // Flair - Survival
@@ -60,7 +64,7 @@
 }
 
 .thing.linkflair.linkflair-survival, .flairselector .linkflair-survival {
-  border-right: 10px solid #0AA;
+  border-right: 10px solid #859900;
 }
 
 // Flair - Creative
@@ -69,7 +73,7 @@
 }
 
 .thing.linkflair.linkflair-creative, .flairselector .linkflair-creative {
-  border-right: 10px solid #FA0;
+  border-right: 10px solid #B58900;
 }
 
 // Flair - Command Blocks
@@ -78,7 +82,7 @@
 }
 
 .thing.linkflair.linkflair-command, .flairselector .linkflair-command {
-  border-right: 10px solid #A0A;
+  border-right: 10px solid #D33682;
 }
 
 // Flair - Redstone
@@ -87,7 +91,7 @@
 }
 
 .thing.linkflair.linkflair-redstone, .flairselector .linkflair-redstone {
-  border-right: 10px solid #F55;
+  border-right: 10px solid #CB4B16;
 }
 
 // Flair - Help
@@ -96,7 +100,7 @@
 }
 
 .thing.linkflair.linkflair-help, .flairselector .linkflair-help {
-  border-right: 10px solid #FF5;
+  border-right: 10px solid #268BD2;
 }
 
 // Flair - Tutorials
@@ -105,7 +109,7 @@
 }
 
 .thing.linkflair.linkflair-tutorial, .flairselector .linkflair-tutorial {
-  border-right: 10px solid #0A0;
+  border-right: 10px solid #2AA198;
 }
 
 // Flair Let's Plays
@@ -114,7 +118,7 @@
 }
 
 .thing.linkflair.linkflair-lp, .flairselector .linkflair-lp {
-  border-right: 10px solid #F5F;
+  border-right: 10px solid #073642;
 }
 
 // Flair - Art
@@ -123,5 +127,5 @@
 }
 
 .thing.linkflair.linkflair-art, .flairselector .linkflair-art {
-  border-right: 10px solid #55F;
+  border-right: 10px solid #6C71C4;
 }
