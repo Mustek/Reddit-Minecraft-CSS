@@ -280,3 +280,8 @@ div.titlebox .users-online span.number:after {
 ul.report-reasons.rounded {
   display: block;
 }
+
+// Mark modbutton as red.
+.global-mod-button {
+  color: red !important;
+}
