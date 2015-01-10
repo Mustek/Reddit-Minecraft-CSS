@@ -256,7 +256,7 @@ div.titlebox span.number {
 }
 
 div.titlebox span.number:after {
-  content: " bridges reposted... again..."
+  content: " really rubbish bins."
 }
 
 div.titlebox .users-online span.word {
@@ -279,4 +279,9 @@ div.titlebox .users-online span.number:after {
 // always show report reasons
 ul.report-reasons.rounded {
   display: block;
+}
+
+// Mark modbutton as red.
+.global-mod-button {
+  color: red !important;
 }

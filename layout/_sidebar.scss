@@ -494,3 +494,50 @@ a[href^="#status_red_website"] {
 a[href^="#status_red_skins"] {
   background-position: -128px -32px;
 }
+
+// Icons for the filters (I Hope)
+a[href*="flair#"] {
+  display: inline-block;
+  height: 32px !important;
+  background: transparent url(%%linkflair%%) no-repeat scroll 0 -32px;
+  vertical-align: middle;
+  width: 32px;
+  border: 0;
+  text-indent: -9999px !important;
+  padding: 0 !important;
+  margin-bottom: 2px;
+  margin-top: 0 !important;
+  font-size: 1.1em !important;
+}
+
+a[href*="flair#Survival"] {
+  background-position: -32px 0;
+}
+
+a[href*="flair#Creative"] {
+  background-position: -64px 0;
+}
+
+a[href*="flair#Help"] {
+  background-position: -160px 0;
+}
+
+a[href*="flair#Tutorial"] {
+  background-position: -192px 0;
+}
+
+a[href*="flair#Redstone"] {
+  background-position: -128px 0;
+}
+
+a[href*="flair#CommandBlock"] {
+  background-position: -96px 0;
+}
+
+a[href*="flair#Art"] {
+  background-position: -256px 0;
+}
+
+a[href*="flair#LetsPlay"] {
+  background-position: -224px 0;
+}

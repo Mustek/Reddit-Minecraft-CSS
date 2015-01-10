@@ -97,7 +97,7 @@ body div.content {
   margin-top: 0;
   padding: 0 !important;
   border: 0 !important;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .linklisting .odd:first-child {
@@ -611,6 +611,10 @@ body:lang(np):not(.subscriber) .entry.dislikes:not(.reddit-entry):before {
 .comment .comment .comment .comment .comment .comment .comment .spam.comment,
 .comment .comment .comment .comment .comment .comment .comment .comment .comment .spam.comment {
   background-color: #E88974 !important;
+}
+
+.link .entry li .flairselectbtn {
+  font-weight: bold;
 }
 
 /* This adds a little info box about downvoting */
