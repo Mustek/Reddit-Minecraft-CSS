@@ -109,6 +109,19 @@ body:not(.search-page) #search {
   color: yellow;
 }
 
+// Sidebar headers
+.side .md .h1, .side .md h2{
+  font-size: 1.2em;
+}
+
+.side .md h3 {
+  font-size: 1.2em;
+}
+
+.side .md h3 a {
+  color: #222222 !important;
+}
+
 // sidebar dropdown menus
 .titlebox .md ul {
   margin: 0 0;
@@ -344,7 +357,7 @@ body:not(.search-page) #search {
 // Sticky, edit text in the sidebar
 .side .md h3:nth-of-type(1) {
   position: absolute;
-  top: 67px;
+  top: 57px;
   left: 0;
   display: block;
   border-bottom: 0;
@@ -354,7 +367,7 @@ body:not(.search-page) #search {
 
   color: #333333;
   font-weight: bold;
-  padding: 7px 7px 7px 27px;
+  padding: 7px 7px 6px 27px;
   right: 0;
 }
 

@@ -219,7 +219,7 @@ body div.content {
 }
 
 .md h2 a[href*='xpaw.ru'], .md h2 a[href$='rules'] {
-  font-size: 100%;
+  font-size: 85%;
   color: #BBB;
   float: right;
   font-weight: normal;
@@ -510,17 +510,12 @@ body > .debuginfo {
 }
 
 .submit_text.enabled {
-  position: absolute;
-  top: 164px;
   background-color: #F6A39F;
+  font-size: 150%
 }
 
 .submit_text.enabled h1 {
   display: none;
-}
-
-.formtabs-content {
-  margin-top: 140px;
 }
 
 .submit-page.content h1 {
