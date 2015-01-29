@@ -109,6 +109,11 @@ body:not(.search-page) #search {
   color: yellow;
 }
 
+// Sidebar headers
+.side .md .h1, .side .md h2{
+  font-size: 1.2em;
+}
+
 // sidebar dropdown menus
 .titlebox .md ul {
   margin: 0 0;

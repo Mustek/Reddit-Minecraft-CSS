@@ -99,6 +99,8 @@ body:not(.search-page) #search { text-align: center; }
 
 #searchexpando a { color: yellow; }
 
+.side .md .h1, .side .md h2 { font-size: 1.2em; }
+
 .titlebox .md ul { margin: 0 0; display: inline-block; }
 
 .titlebox li li { color: red; display: none; padding: 3px 3px 3px 10px !important; text-align: left; margin: 0; }
@@ -331,7 +333,7 @@ body div.content { margin: 10px 320px 0 5px !important; padding: 20px 0 0 !impor
 
 .md h2, .commentarea h2 { margin-bottom: 10px; padding: 5px 0 10px 3px; border-bottom: 1px dotted #C1BFBF; font-weight: bold; }
 
-.md h2 a[href*='xpaw.ru'], .md h2 a[href$='rules'] { font-size: 55%; color: #BBB; float: right; font-weight: normal; text-decoration: none; vertical-align: super; }
+.md h2 a[href*='xpaw.ru'], .md h2 a[href$='rules'] { font-size: 85%; color: #BBB; float: right; font-weight: normal; text-decoration: none; vertical-align: super; }
 
 .md h2 a[href*='xpaw.ru']:hover, .md h2 a[href$='rules']:hover { color: #DD513B; text-decoration: none; }
 
