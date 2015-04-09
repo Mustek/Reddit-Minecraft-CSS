@@ -53,23 +53,15 @@
   border-right: 10px solid #DC322F;
 }
 
-// Flair - Survival
-.linkflair-survival .title .linkflairlabel {
-  @include pos(1, 0);
+// Flair - News
+.linkflair-news .title .linkflairlabel {
+  @include pos(9, 0);
 }
 
-.thing.linkflair.linkflair-survival, .flairselector .linkflair-survival {
-  border-right: 10px solid #859900;
+.thing.linkflair.linkflair-news, .flairselector .linkflair-news {
+  border-right: 10px solid #DC322F;
 }
 
-// Flair - Creative
-.linkflair-creative .title .linkflairlabel {
-  @include pos(2, 0);
-}
-
-.thing.linkflair.linkflair-creative, .flairselector .linkflair-creative {
-  border-right: 10px solid #B58900;
-}
 
 // Flair - Command Blocks
 .linkflair-command .title .linkflairlabel {
@@ -116,11 +108,39 @@
   border-right: 10px solid #073642;
 }
 
-// Flair - Art
+// Flair - FanArt
 .linkflair-art .title .linkflairlabel {
   @include pos(8, 0);
 }
 
 .thing.linkflair.linkflair-art, .flairselector .linkflair-art {
   border-right: 10px solid #6C71C4;
+}
+
+// Flair - Maps
+.linkflair-maps .title .linkflairlabel {
+  @include pos(10, 0);
+}
+
+.thing.linkflair.linkflair-maps, .flairselector .linkflair-maps {
+  border-right: 10px solid #6C71C4;
+}
+
+// Obsolete flairs. Keep for BW compat.
+// Flair - Survival (OBSOLETE)
+.linkflair-survival .title .linkflairlabel {
+  @include pos(1, 0);
+}
+
+.thing.linkflair.linkflair-survival, .flairselector .linkflair-survival {
+  border-right: 10px solid #859900;
+}
+
+// Flair - Creative (OBSOLETE)
+.linkflair-creative .title .linkflairlabel {
+  @include pos(2, 0);
+}
+
+.thing.linkflair.linkflair-creative, .flairselector .linkflair-creative {
+  border-right: 10px solid #B58900;
 }
