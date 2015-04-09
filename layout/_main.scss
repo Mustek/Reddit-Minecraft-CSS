@@ -662,13 +662,18 @@ h1.hover.redditname {
   content: " (" attr(title) ")";
 }
 
-.controversial.comment > .entry > .noncollapsed > .tagline:hover > .score:after {
+.noncollapsed.controversial.comment > .entry > .tagline:hover > .score:after {
   content: " (controversial comment)";
   top: 0;
 }
 
 .link.controversial .tagline:hover .userattrs:after {
   content: " (controversial post)";
+}
+
+.commentarea .tagline:hover time:after {
+  display: inline !important;
+  content: " (" attr(title) ") "
 }
 
 /* Highlight controversial content for mods */
