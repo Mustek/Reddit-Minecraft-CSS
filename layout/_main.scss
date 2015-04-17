@@ -656,19 +656,24 @@ h1.hover.redditname {
   margin-left: 20px;
 }
 
-/* Explanatory text for edited/controversial posts/links on hover */
-.tagline:hover .edited-timestamp:after {
-  display: inline !important;
-  content: " (" attr(title) ")";
+/* Timestamp and explanatory text for edited/controversial comments on hover */
+.commentarea .tagline:hover .edited-timestamp:after {
+  display:inline !important;
+  content:" (" attr(title) ")";
 }
 
-.controversial.comment > .entry > .noncollapsed > .tagline:hover > .score:after {
-  content: " (controversial comment)";
-  top: 0;
+.commentarea .tagline:hover time:after {
+  display:inline !important;
+  content:" (" attr(title) ")";
+}
+
+.noncollapsed.controversial.comment>.entry>.tagline:hover>.score:after {
+  content:" (controversial comment)";
+  top:0;
 }
 
 .link.controversial .tagline:hover .userattrs:after {
-  content: " (controversial post)";
+  content:" (controversial post)";
 }
 
 /* Highlight controversial content for mods */
@@ -679,4 +684,9 @@ h1.hover.redditname {
 /* show struck-through links as struck-through because we made links behave weird with the comment sprites - rsh */
 del a {
   text-decoration: line-through
+}
+
+/* Make text under sponsorships more visible */
+#ad_sponsorship #redditthis a {
+  color: white;
 }
