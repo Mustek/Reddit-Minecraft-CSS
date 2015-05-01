@@ -171,19 +171,17 @@ body:not(.search-page) #search { text-align: center; }
 
 .side .redditname { margin-bottom: -27px !important; padding-bottom: 29px !important; }
 
-.styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.leavecontributor-button { display: block; background-color: #F5F5F5 !important; border: 0; margin: 0; padding: 5px; }
+.styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.sr_style_toggle, .toggle.leavecontributor-button { display: block; background-color: #F5F5F5 !important; border: 0; margin: 0; padding: 3px 5px !important; }
 
 .subscribers { margin-top: -29px !important; padding-top: 29px !important; }
 
 .side .tagline { display: block; background-color: #F5F5F5; border: 0 solid #C1BFBF; border-bottom-width: 1px; box-shadow: 0 1px 2px #C0C0C0; margin: 0 0 0 0 !important; padding: 5px; }
 
-.side .spacer .titlebox div:nth-of-type(1):not(.flairselector):not(.md):not(.usertext-body) { display: block !important; background-color: #F5F5F5; border: 0 !important; margin: 0 !important; padding: 5px !important; }
-
 .fancy-toggle-button .remove { background: #DD513B none; border-radius: 0 !important; }
 
 .fancy-toggle-button .add { background: #4D6277 none; border-radius: 0 !important; margin-left: 5px; }
 
-.subButtons .RESshortcutside { width: auto; display: inline-block; }
+.subButtons .RESshortcutside { width: auto; display: inline-block; padding: 0 25px; }
 
 .RESshortcutside, .RESDashboardToggle { color: white; background: #4D6277 none !important; border-radius: 0 !important; }
 
@@ -432,19 +430,6 @@ body > .debuginfo { background-color: #C0C0C0; }
 /* Formatting for the content of the Service Status block */
 .titlebox .usertext-body .md:nth-child(1) > blockquote:nth-of-type(1) > p { font-size: 90%; color: gray; text-align: center; }
 
-.submit_text.enabled { background-color: #F6A39F; font-size: 150%; }
-
-.submit_text.enabled h1 { display: none; }
-
-.submit-page.content h1 { display: none; }
-
-/* Hide the submit button */
-.submit-page button.btn { position: absolute !important; top: 167px; right: 60px; }
-
-.submit-page .roundfield.info-notice:after { content: "Looking for something? Read the red box to find the 'submit' button!"; text-align: center; position: absolute; width: 500px; margin: 65px 0 0 -475px; }
-
-form#newlink.submit.content { border-bottom: 30px solid white; }
-
 /* "No Participation"-Mode, aka "Read Only"-Mode by /u/KortoloB  /r/NoParticipation  Link people to np.reddit.com/r/YourSubreddit to show them a read-only version. Subscribers will see the full page, only non-subscribers will see the read-only version. This is of course by no means fool-proof, but it should work for the average user. */
 body:lang(np):not(.subscriber) .arrow { visibility: hidden !important; }
 
@@ -481,10 +466,12 @@ h1.hover.redditname { text-align: center; }
 
 .searchpane { margin-right: 25px; margin-left: 20px; }
 
-/* Explanatory text for edited/controversial posts/links on hover */
-.tagline:hover .edited-timestamp:after { display: inline !important; content: " (" attr(title) ")"; }
+/* Timestamp and explanatory text for edited/controversial comments on hover */
+.commentarea .tagline:hover .edited-timestamp:after { display: inline !important; content: " (" attr(title) ")"; }
 
-.controversial.comment > .entry > .noncollapsed > .tagline:hover > .score:after { content: " (controversial comment)"; top: 0; }
+.commentarea .tagline:hover time:after { display: inline !important; content: " (" attr(title) ")"; }
+
+.noncollapsed.controversial.comment > .entry > .tagline:hover > .score:after { content: " (controversial comment)"; top: 0; }
 
 .link.controversial .tagline:hover .userattrs:after { content: " (controversial post)"; }
 
@@ -493,6 +480,9 @@ h1.hover.redditname { text-align: center; }
 
 /* show struck-through links as struck-through because we made links behave weird with the comment sprites - rsh */
 del a { text-decoration: line-through; }
+
+/* Make text under sponsorships more visible */
+#ad_sponsorship #redditthis a { color: white; }
 
 /* wiki formatting */
 div.wiki div.toc > ul:before { display: block !important; content: "Table of Contents"; color: #99A; text-align: center; margin-top: -5px; margin-bottom: 5px; }
@@ -514,6 +504,23 @@ div.wiki div.toc > ul:before { display: block !important; content: "Table of Con
 .toc { float: right; max-width: 40%; border-color: #C1BFBF; }
 
 body.wiki-page:lang(np):not(.subscriber) span.pageactions a.wikiaction-edit:not(.wikiaction-current), body.wiki-page:lang(np):not(.subscriber) div.wiki-page-content form#editform label[for='reason'], body.wiki-page:lang(np):not(.subscriber) div.wiki-page-content form#editform input#wiki_revision_reason, body.wiki-page:lang(np):not(.subscriber) div.wiki-page-content form#editform input[type='submit'] { display: none !important; }
+
+/* Hide the submit button */
+.submit-page button.btn { position: absolute !important; top: 167px; right: 60px; }
+
+.submit-page .roundfield.info-notice:after { content: "Looking for something? Read the red box to find the 'submit' button!"; text-align: center; position: absolute; width: 500px; margin: 65px 0 0 -475px; }
+
+/* Some color changes */
+.submit_text.enabled { background-color: #F6A39F; font-size: 150%; }
+
+.submit_text.enabled h1 { display: none; }
+
+.submit-page.content h1 { display: none; }
+
+form#newlink.submit.content { border-bottom: 30px solid white; }
+
+/* Hide the subreddit they're submitting to. */
+.submit-page > #reddit-field { display: none; }
 
 /* Make distinguished users stand out more (mods, op and friends) */
 .tagline .author.submitter { color: white !important; background-color: #0055df !important; font-weight: bold !important; border-radius: 0 !important; padding: 0 2px !important; }
