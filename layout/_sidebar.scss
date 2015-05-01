@@ -110,7 +110,7 @@ body:not(.search-page) #search {
 }
 
 // Sidebar headers
-.side .md .h1, .side .md h2{
+.side .md .h1, .side .md h2 {
   font-size: 1.2em;
 }
 
@@ -282,12 +282,12 @@ body:not(.search-page) #search {
   padding-bottom: 29px !important;
 }
 
-.styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.leavecontributor-button {
+.styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.sr_style_toggle, .toggle.leavecontributor-button {
   display: block;
   background-color: #F5F5F5 !important;
   border: 0;
   margin: 0;
-  padding: 5px;
+  padding: 3px 5px !important;
 }
 
 .subscribers {
@@ -320,6 +320,7 @@ body:not(.search-page) #search {
 .subButtons .RESshortcutside {
   width: auto;
   display: inline-block;
+  padding: 0 25px;
 }
 
 .RESshortcutside, .RESDashboardToggle {
