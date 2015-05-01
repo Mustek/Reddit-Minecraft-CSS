@@ -509,38 +509,6 @@ body > .debuginfo {
   text-align: center;
 }
 
-.submit_text.enabled {
-  background-color: #F6A39F;
-  font-size: 150%
-}
-
-.submit_text.enabled h1 {
-  display: none;
-}
-
-.submit-page.content h1 {
-  display: none;
-}
-
-/* Hide the submit button */
-.submit-page button.btn {
-  position: absolute !important;
-  top: 167px;
-  right: 60px;
-}
-
-.submit-page .roundfield.info-notice:after {
-  content: "Looking for something? Read the red box to find the 'submit' button!";
-  text-align: center;
-  position: absolute;
-  width: 500px;
-  margin: 65px 0 0 -475px;
-}
-
-form#newlink.submit.content {
-  border-bottom: 30px solid white;
-}
-
 /* "No Participation"-Mode, aka "Read Only"-Mode
  * by /u/KortoloB
  * /r/NoParticipation
