@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 /*!  Boxed reddit CSS Theme v1.5 - (http://www.reddit.com/r/boxed/)
      Changes by /u/Mustek, /u/aperson and /u/redstonehelper. Additional graphics by /u/enchilado
      Source, issues and pull requests: https://github.com/Mustek/Reddit-Minecraft-CSS/
@@ -243,13 +243,11 @@ a[href^="#status_red_skins"] { background-position: -128px -32px; }
 
 a[href*="flair:"] { display: inline-block; height: 32px !important; background: transparent url(%%linkflair%%) no-repeat scroll 0 -32px; vertical-align: middle; width: 32px; border: 0; text-indent: -9999px !important; padding: 0 !important; margin-bottom: 2px; margin-top: 0 !important; font-size: 1.1em !important; }
 
-a[href*="flair:News"] { background-position: -288px 0; }
-
-a[href*="flair:Builds"] { background-position: -32px 0; }
+a[href*="flair:Survival"] { background-position: -32px 0; }
 
 a[href*="flair:Creative"] { background-position: -64px 0; }
 
-a[href*="flair:Maps"] { background-position: -320px 0; }
+a[href*="flair:Help"] { background-position: -160px 0; }
 
 a[href*="flair:Tutorial"] { background-position: -192px 0; }
 
@@ -258,6 +256,8 @@ a[href*="flair:Redstone"] { background-position: -128px 0; }
 a[href*="flair:CommandBlock"] { background-position: -96px 0; }
 
 a[href*="flair:Art"] { background-position: -256px 0; }
+
+a[href*="flair:LetsPlay"] { background-position: -224px 0; }
 
 .rounded { border-radius: 0 !important; }
 
@@ -710,7 +710,7 @@ div.thing.link:first-child[data-fullname$="z"]:after { content: url(%%herobrineb
 
 .linkflairlabel { padding: 0 2px; height: auto; border-radius: 0; color: #333; font-weight: 700; font-style: normal; font-variant: normal; font-size: 12px; cursor: default; }
 
-.linkflair .title .linkflairlabel { background: url(%%linkflair%%) no-repeat; color: transparent; font-size: 0; right: 365px; margin-top: -8px; height: 81px; max-width: 32px; width: 28px; position: absolute; z-index: 98; border-width: 0 0 0 0; }
+.linkflair .title .linkflairlabel { background: url(%%linkflair%%) no-repeat; color: transparent; font-size: 0; right: 365px; margin-top: -14px; height: 81px; max-width: 32px; width: 28px; position: absolute; z-index: 98; border-width: 0 0 0 0; }
 
 .thing.linkflair, .flairselector { border-right: 10px solid #93A1A1; }
 
@@ -724,7 +724,7 @@ div.thing.link:first-child[data-fullname$="z"]:after { content: url(%%herobrineb
 
 .linkflair-creative .title .linkflairlabel { background-position: -64px 50% !important; }
 
-.thing.linkflair.linkflair-creative, .flairselector .linkflair-creative { border-right: 10px solid #6C71C4; }
+.thing.linkflair.linkflair-creative, .flairselector .linkflair-creative { border-right: 10px solid #B58900; }
 
 .linkflair-command .title .linkflairlabel { background-position: -96px 50% !important; }
 
@@ -749,14 +749,6 @@ div.thing.link:first-child[data-fullname$="z"]:after { content: url(%%herobrineb
 .linkflair-art .title .linkflairlabel { background-position: -256px 50% !important; }
 
 .thing.linkflair.linkflair-art, .flairselector .linkflair-art { border-right: 10px solid #6C71C4; }
-
-.linkflair-news .title .linkflairlabel { background-position: -288px 50% !important; }
-
-.thing.linkflair.linkflair-news, .flairselector .linkflair-news { border-right: 10px solid #DC322F; }
-
-.linkflair-maps .title .linkflairlabel { background-position: -320px 50% !important; }
-
-.thing.linkflair.linkflair-maps, .flairselector .linkflair-maps { border-right: 10px solid #1CB900; }
 
 /* User Flair */
 .flair { background: url(%%flair%%) no-repeat scroll -9999px -9999px transparent; height: 16px; vertical-align: middle; width: 16px; border: 0; text-indent: -9999px; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; padding: 0 !important; margin-bottom: 2px; margin-top: 0 !important; font-size: 1.1em !important; }
