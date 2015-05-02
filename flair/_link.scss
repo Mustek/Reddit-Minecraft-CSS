@@ -43,84 +43,18 @@
   background-position: #{- ($x * 32px)} 50% !important;
 }
 
-// Individual Styling
-// Flair - Announcements
-.linkflair-announcement .title .linkflairlabel {
-  @include pos(0, 0);
-}
+// Order by appearance in the spritesheet. Pairs: (name, border-color, ...)
+$linkflair: (announcement: #DC322F, survival: #859900, creative: #6C71C4, command: #D33682, redstone: #CB4B16, help: #268BD2, tutorial: #2AA198, lp: #073642, art: #6C71C4, news: #DC322F, maps: #1CB900);
+$counter: 0;
 
-.thing.linkflair.linkflair-announcement, .flairselector .linkflair-announcement {
-  border-right: 10px solid #DC322F;
-}
+@each $type, $color in $linkflair {
 
-// Flair - Survival
-.linkflair-survival .title .linkflairlabel {
-  @include pos(1, 0);
-}
+  .linkflair-#{$type} .title .linkflairlabel {
+    @include pos($counter, 0);
+  }
 
-.thing.linkflair.linkflair-survival, .flairselector .linkflair-survival {
-  border-right: 10px solid #859900;
-}
-
-// Flair - Creative
-.linkflair-creative .title .linkflairlabel {
-  @include pos(2, 0);
-}
-
-.thing.linkflair.linkflair-creative, .flairselector .linkflair-creative {
-  border-right: 10px solid #B58900;
-}
-
-// Flair - Command Blocks
-.linkflair-command .title .linkflairlabel {
-  @include pos(3, 0);
-}
-
-.thing.linkflair.linkflair-command, .flairselector .linkflair-command {
-  border-right: 10px solid #D33682;
-}
-
-// Flair - Redstone
-.linkflair-redstone .title .linkflairlabel {
-  @include pos(4, 0);
-}
-
-.thing.linkflair.linkflair-redstone, .flairselector .linkflair-redstone {
-  border-right: 10px solid #CB4B16;
-}
-
-// Flair - Help
-.linkflair-help .title .linkflairlabel {
-  @include pos(5, 0);
-}
-
-.thing.linkflair.linkflair-help, .flairselector .linkflair-help {
-  border-right: 10px solid #268BD2;
-}
-
-// Flair - Tutorials
-.linkflair-tutorial .title .linkflairlabel {
-  @include pos(6, 0);
-}
-
-.thing.linkflair.linkflair-tutorial, .flairselector .linkflair-tutorial {
-  border-right: 10px solid #2AA198;
-}
-
-// Flair Let's Plays
-.linkflair-lp .title .linkflairlabel {
-  @include pos(7, 0);
-}
-
-.thing.linkflair.linkflair-lp, .flairselector .linkflair-lp {
-  border-right: 10px solid #073642;
-}
-
-// Flair - Art
-.linkflair-art .title .linkflairlabel {
-  @include pos(8, 0);
-}
-
-.thing.linkflair.linkflair-art, .flairselector .linkflair-art {
-  border-right: 10px solid #6C71C4;
+  .thing.linkflair.linkflair-#{$type}, .flairselector .linkflair-#{$type} {
+    border-right: 10px solid #{$color};
+  }
+  $counter: $counter+1;
 }
