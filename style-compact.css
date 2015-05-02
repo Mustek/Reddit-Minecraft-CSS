@@ -710,7 +710,7 @@ div.thing.link:first-child[data-fullname$="z"]:after { content: url(%%herobrineb
 
 .linkflairlabel { padding: 0 2px; height: auto; border-radius: 0; color: #333; font-weight: 700; font-style: normal; font-variant: normal; font-size: 12px; cursor: default; }
 
-.linkflair .title .linkflairlabel { background: url(%%linkflair%%) no-repeat; color: transparent; font-size: 0; right: 365px; margin-top: -14px; height: 81px; max-width: 32px; width: 28px; position: absolute; z-index: 98; border-width: 0 0 0 0; }
+.linkflair .title .linkflairlabel { background: url(%%linkflair%%) no-repeat; color: transparent; font-size: 0; right: 365px; margin-top: -8px; height: 81px; max-width: 32px; width: 28px; position: absolute; z-index: 98; border-width: 0 0 0 0; }
 
 .thing.linkflair, .flairselector { border-right: 10px solid #93A1A1; }
 
