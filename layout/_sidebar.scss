@@ -547,3 +547,26 @@ a[href*="flair:CommandBlock"] {
 a[href*="flair:Art"] {
   background-position: -256px 0;
 }
+
+/** Minecon countdown **/
+.md h4 {
+  font-size: 2.8em !important;
+  font-weight: bold;
+  color: #4B4D6B;
+  text-align: center;
+  margin: -5px 60px 0 60px !important;
+  padding: 0 0 5px 0;
+  border-radius: 0 0 10px 10px !important;
+  background: url(%%minecon-bg%%) white 0 0 no-repeat;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white
+}
+
+.side [href*="http://minecon.mojang.com/"] {
+  text-indent: -9999em;
+  display: block;
+  width: 300px;
+  height: 64px;
+  background-image: url(%%minecon%%);
+  content: ''
+}
+/** END Minecon countdown **/
