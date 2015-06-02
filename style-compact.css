@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!  Boxed reddit CSS Theme v1.5 - (http://www.reddit.com/r/boxed/)
      Changes by /u/Mustek, /u/aperson and /u/redstonehelper. Additional graphics by /u/enchilado
      Source, issues and pull requests: https://github.com/Mustek/Reddit-Minecraft-CSS/
@@ -308,14 +307,15 @@ body div.content { margin: 10px 320px 0 5px !important; padding: 20px 0 0 !impor
 
 .link .midcol { margin-right: 3px; margin-left: 0; margin-top: 7px; }
 
-.linklisting { bottom: 0; margin-top: 0; padding: 0 !important; border: 0 !important; margin-left: 20px; }
+.linklisting { bottom: 0; padding: 0 !important; border: 0 !important; margin: 0 25px 0 20px; box-shadow: 0 3px 3px 1px #C0C0C0; }
 
 .linklisting .odd:first-child { border-top: 0 none !important; }
 
-.linklisting .odd { overflow: hidden !important; margin: 0 20px 0 0 !important; padding: 5px 5px 10px 10px !important; background-color: rgba(245, 245, 245, 0.8); min-height: 50px !important; box-shadow: 0 3px 3px 1px #C0C0C0; }
+.linklisting .odd { overflow: hidden !important; margin: 0 !important; padding: 5px 5px 10px 10px !important; background-color: rgba(245, 245, 245, 0.8); min-height: 50px !important; }
 
-.linklisting .even:not(.res-nightmode) { overflow: hidden !important; margin: 0 20px 0 0 !important; padding: 5px 5px 10px 10px !important; background-color: rgba(250, 250, 250, 0.8); min-height: 50px !important; box-shadow: 0 3px 3px 1px #C0C0C0; }
+.linklisting .even:not(.res-nightmode) { overflow: hidden !important; margin: 0 !important; padding: 5px 5px 10px 10px !important; background-color: rgba(250, 250, 250, 0.8); min-height: 50px !important; }
 
+/* Make the sticky stand out a bit */
 .linklisting .stickied { margin-bottom: 8px !important; }
 
 .linklisting .stickied .thumbnail { background: url(%%testibg%%) no-repeat 5px 5px; height: 60px; }
@@ -572,23 +572,23 @@ form#newlink.submit.content { border-bottom: 30px solid white; }
 
 #modmail.havemail { background-position: -16px 2px; }
 
-.expando-button.image.expanded, .expando-button.image.collapsedExpando, .expando-button.image.expanded:hover, .expando-button.image.collapsedExpando:hover, .expando-button.selftext.expanded, .expando-button.selftext.collapsed, .expando-button.selftext.expanded:hover, .expando-button.selftext.collapsed:hover, .expando-button.video.expanded, .expando-button.video.collapsed, .expando-button.video.expanded:hover, .expando-button.video.collapsed:hover { background: url(%%sub-sprites%%) no-repeat; width: 21px; height: 21px; }
+.expando-button.image.expanded, .expando-button.image.collapsedExpando, .expando-button.image.expanded:hover, .expando-button.image.collapsedExpando:hover, .expando-button.selftext.expanded, .expando-button.selftext.collapsed, .expando-button.selftext.expanded:hover, .expando-button.selftext.collapsed:hover, .expando-button.video.expanded, .expando-button.video.collapsed, .expando-button.video.expanded:hover, .expando-button.video.collapsed:hover { background: url(%%sub-sprites%%) no-repeat !important; width: 21px; height: 21px; }
 
-.expando-button.image.collapsedExpando { background-position: -21px -32px !important; }
+.expando-button.selftext.collapsed { background-position: 0px -32px !important; }
 
-.expando-button.image.collapsedExpando:hover { background-position: -21px -53px !important; }
+.expando-button.selftext.collapsed:hover { background-position: 0px -53px !important; }
+
+.expando-button.selftext.expanded { background-position: 0px -74px !important; }
+
+.expando-button.selftext.expanded:hover { background-position: 0px -95px !important; }
+
+.expando-button.image.collapsed { background-position: -21px -32px !important; }
+
+.expando-button.image.collapsed:hover { background-position: -21px -53px !important; }
 
 .expando-button.image.expanded { background-position: -21px -74px !important; }
 
 .expando-button.image.expanded:hover { background-position: -21px -95px !important; }
-
-.expando-button.selftext.collapsed { background-position: 0 -32px !important; }
-
-.expando-button.selftext.collapsed:hover { background-position: 0 -53px !important; }
-
-.expando-button.selftext.expanded { background-position: 0 -74px !important; }
-
-.expando-button.selftext.expanded:hover { background-position: 0 -95px !important; }
 
 .expando-button.video.collapsed { background-position: -42px -32px !important; }
 
@@ -1853,5 +1853,22 @@ a[href="/rftw"] { background-position: 0px -688px; }
 #NERFail { width: 99% !important; height: auto !important; border-width: 0 !important; }
 
 body.res:lang(np):not(.subscriber) div.titlebox > div[style*='display: block !important'] input:before, body.res:lang(np):not(.subscriber) div.titlebox > div[style*='display: block !important'] label:before, body.res:lang(np):not(.subscriber) > div#keyCommandLineWidget > form:before { content: 'Removed by NoParticipation' !important; margin-left: -10000px !important; }
+
+/* RES NIGHTMODE STYLES */
+.res-nightmode .linklisting { box-shadow: 0 0 0 0; }
+.res-nightmode .linklisting .even { background-color: rgba(6, 6, 6, 0.8); }
+.res-nightmode .expando-button.selftext.collapsed { background-position: -63px -32px !important; }
+.res-nightmode .expando-button.selftext.collapsed:hover { background-position: -63px -53px !important; }
+.res-nightmode .expando-button.selftext.expanded { background-position: -63px -74px !important; }
+.res-nightmode .expando-button.selftext.expanded:hover { background-position: -63px -95px !important; }
+.res-nightmode .expando-button.image.collapsed { background-position: -84px -32px !important; }
+.res-nightmode .expando-button.image.collapsed:hover { background-position: -84px -53px !important; }
+.res-nightmode .expando-button.image.expanded { background-position: -84px -74px !important; }
+.res-nightmode .expando-button.image.expanded:hover { background-position: -84px -95px !important; }
+.res-nightmode .expando-button.video.collapsed { background-position: -105px -32px !important; }
+.res-nightmode .expando-button.video.collapsed:hover { background-position: -105px -53px !important; }
+.res-nightmode .expando-button.video.expanded { background-position: -105px -74px !important; }
+.res-nightmode .expando-button.video.expanded:hover { background-position: -105px -95px !important; }
+.res-nightmode .res .RES-keyNav-activeElement { background: transparent !important; }
 
 /*# sourceMappingURL=style-compact.css.map */

@@ -108,57 +108,35 @@
 .expando-button.image.expanded, .expando-button.image.collapsedExpando, .expando-button.image.expanded:hover, .expando-button.image.collapsedExpando:hover,
 .expando-button.selftext.expanded, .expando-button.selftext.collapsed, .expando-button.selftext.expanded:hover, .expando-button.selftext.collapsed:hover,
 .expando-button.video.expanded, .expando-button.video.collapsed, .expando-button.video.expanded:hover, .expando-button.video.collapsed:hover {
-  background: url(%%sub-sprites%%) no-repeat;
+  background: url(%%sub-sprites%%) no-repeat !important;
   width: 21px;
   height: 21px;
 }
 
-.expando-button.image.collapsedExpando {
-  background-position: -21px -32px !important;
+$expandos: selftext image video;
+
+@mixin pos($y: 0, $x: 0) {
+  background-position: #{- ($y * 21px)+21} #{$x} !important;
 }
 
-.expando-button.image.collapsedExpando:hover {
-  background-position: -21px -53px !important;
-}
+@each $expando in $expandos {
+  $i: index($expandos, $expando);
 
-.expando-button.image.expanded {
-  background-position: -21px -74px !important;
-}
+  .expando-button.#{$expando}.collapsed {
+    @include pos($i, -32px);
+  }
 
-.expando-button.image.expanded:hover {
-  background-position: -21px -95px !important;
-}
+  .expando-button.#{$expando}.collapsed:hover {
+    @include pos($i, -53px);
+  }
 
-.expando-button.selftext.collapsed {
-  background-position: 0 -32px !important;
-}
+  .expando-button.#{$expando}.expanded {
+    @include pos($i, -74px);
+  }
 
-.expando-button.selftext.collapsed:hover {
-  background-position: 0 -53px !important;
-}
-
-.expando-button.selftext.expanded {
-  background-position: 0 -74px !important;
-}
-
-.expando-button.selftext.expanded:hover {
-  background-position: 0 -95px !important;
-}
-
-.expando-button.video.collapsed {
-  background-position: -42px -32px !important;
-}
-
-.expando-button.video.collapsed:hover {
-  background-position: -42px -53px !important;
-}
-
-.expando-button.video.expanded {
-  background-position: -42px -74px !important;
-}
-
-.expando-button.video.expanded:hover {
-  background-position: -42px -95px !important;
+  .expando-button.#{$expando}.expanded:hover {
+    @include pos($i, -95px);
+  }
 }
 
 // cakeday icon
