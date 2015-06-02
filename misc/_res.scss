@@ -13,6 +13,7 @@
   border-left: 0 !important;
   border-right: 5px solid #AAAAAA;
 }
+
 // << Change location of the currently selected element marker
 
 // >> RES neverending reddit fixes
@@ -46,6 +47,7 @@
   height: auto !important;
   border-width: 0 !important;
 }
+
 // << RES neverending reddit fixes
 
 // Attempts to disrupt RES from hiding CSS styles
@@ -54,4 +56,48 @@ body.res:lang(np):not(.subscriber) div.titlebox > div[style*='display: block !im
 body.res:lang(np):not(.subscriber) > div#keyCommandLineWidget > form:before {
   content: 'Removed by NoParticipation' !important;
   margin-left: -10000px !important;
+}
+
+/* RES NIGHTMODE STYLES */
+.res-nightmode {
+  // Linklisting
+  .linklisting {
+    box-shadow: 0 0 0 0;
+  }
+  .linklisting .even {
+    background-color: rgba(6, 6, 6, 0.8);
+  }
+
+  //Expandos
+  $expandos: selftext image video;
+
+  @mixin pos($y: 0, $x: 0) {
+    background-position: #{- ($y * 21px)+21-63px} #{$x} !important;
+  }
+
+  @each $expando in $expandos {
+    $i: index($expandos, $expando);
+
+    .expando-button.#{$expando}.collapsed {
+      @include pos($i, -32px);
+    }
+
+    .expando-button.#{$expando}.collapsed:hover {
+      @include pos($i, -53px);
+    }
+
+    .expando-button.#{$expando}.expanded {
+      @include pos($i, -74px);
+    }
+
+    .expando-button.#{$expando}.expanded:hover {
+      @include pos($i, -95px);
+    }
+  }
+
+  // RES stuff
+  .res .RES-keyNav-activeElement {
+    background: transparent !important;
+  }
+
 }
