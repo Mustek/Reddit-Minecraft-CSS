@@ -288,21 +288,18 @@ body:not(.profile-page) .side {
 // lets put the mess of buttons and info in something that looks like a box
 .side .redditname {
   display: block;
-  background-color: #F5F5F5;
+  background-color: white;
   border: 0 solid #C1BFBF;
   border-top-width: 1px;
   margin: 5px 0 0 0;
   padding: 5px;
-}
-
-.side .redditname {
   margin-bottom: -27px !important;
   padding-bottom: 29px !important;
 }
 
 .styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.sr_style_toggle, .toggle.leavecontributor-button {
   display: block;
-  background-color: #F5F5F5 !important;
+  background-color: white !important;
   border: 0;
   margin: 0;
   padding: 3px 5px !important;
@@ -315,7 +312,7 @@ body:not(.profile-page) .side {
 
 .side .tagline {
   display: block;
-  background-color: #F5F5F5;
+  background-color: white;
   border: 0 solid #C1BFBF;
   border-bottom-width: 1px;
   box-shadow: 0 1px 2px #C0C0C0;
