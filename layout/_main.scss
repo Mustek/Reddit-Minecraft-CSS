@@ -653,6 +653,11 @@ del a {
   text-decoration: line-through
 }
 
+/* Make text under sponsorships more visible */
+#ad_sponsorship {
+  background-color: #F5F5F5; padding-bottom: 7px
+}
+
 /* Comment box background image, stolen from /r/AskReddit */
 .commentarea .usertext textarea,.roundfield .usertext-edit textarea {
   background:url("%%commentbox%%") no-repeat;
