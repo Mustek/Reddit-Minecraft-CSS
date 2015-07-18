@@ -55,13 +55,17 @@ body:not(.search-page) #search input[type="text"] {
 
 .side {
   width: 300px;
-  margin: 30px 20px 20px 10px;
+  margin: 30px 5px 0px 0px;
   padding: 5px !important;
   z-index: 0;
   box-shadow: 0 2px 3px 1px #AFABAB;
-  overflow: hidden;
-  background: url(%%grass-new%%) #E7E7E7 repeat-x;
+  overflow: hidden
 }
+
+body:not(.profile-page) .side {
+  background: url(%%grass-new%%) #E7E7E7 repeat-x
+}
+
 
 .side hr {
   visibility: hidden;
