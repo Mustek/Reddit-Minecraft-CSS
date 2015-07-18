@@ -136,7 +136,7 @@ body div.content {
 }
 
 .panestack-title {
-  margin: 0 !important;
+  margin: 0 20px 0 0 !important;
   border-bottom: 1px dotted #808080;
   background-color: #FFF;
   box-shadow: 0 3px 3px 1px #C0C0C0;
@@ -145,7 +145,7 @@ body div.content {
 }
 
 .commentarea .menuarea, .commentarea .infobar {
-  margin: 0 !important;
+  margin: 0 20px 0 0 !important;
   border: none;
   color: #808080;
   background-color: #FFF;
@@ -155,7 +155,7 @@ body div.content {
 }
 
 .commentarea > .usertext {
-  margin: 0 !important;
+  margin: 0 20px 0 0 !important;
   overflow: auto;
   background-color: #FFF;
   box-shadow: 0 3px 3px 1px #C0C0C0;
@@ -176,7 +176,7 @@ body div.content {
   padding: 7px 10px 7px 30px;
   box-shadow: 0 3px 3px 1px #C0C0C0;
   background-color: #FFF;
-  margin: 0 !important;
+  margin: 0 20px 0 0 !important;
   overflow: auto;
   display: block;
   max-width: 100%;
@@ -583,7 +583,7 @@ body:lang(np):not(.subscriber) .entry.dislikes:not(.reddit-entry):before {
 .commentarea > div.sitetable:before {
   content: "Please don't downvote comments based on opinion. The downvote arrow is for comments which add nothing to the discussion and might as well not be there.";
   display: block;
-  margin: 0 0 10px 0;
+  margin: 0 20px 10px 0;
   overflow: auto;
   background-color: #FFE8DC;
   padding: 8px;
