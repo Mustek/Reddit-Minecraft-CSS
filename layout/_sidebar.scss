@@ -105,6 +105,15 @@ body:not(.profile-page) .side {
   margin: 0;
 }
 
+.profile-page .spacer:first-child .titlebox {
+  background-color:#F5F5F5;
+  padding: 5px;
+  border-width:1px 0;
+  border-style:solid;
+  border-color:#C1BFBF;
+  box-shadow:0 1px 2px #C0C0C0
+}
+
 #searchexpando {
   color: white;
   border-radius: 0 !important;
