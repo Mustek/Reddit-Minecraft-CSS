@@ -59,10 +59,7 @@ body:not(.search-page) #search input[type="text"] {
   padding: 5px !important;
   z-index: 0;
   box-shadow: 0 2px 3px 1px #AFABAB;
-  overflow: hidden
-}
-
-body:not(.profile-page) .side {
+  overflow: hidden;
   background: url(%%grass-new%%) #E7E7E7 repeat-x
 }
 
@@ -102,7 +99,7 @@ body:not(.profile-page) .side {
 }
 
 .profile-page .spacer:first-child .titlebox {
-  background-color:#F5F5F5;
+  background-color:white;
   padding: 5px;
   border-width:1px 0;
   border-style:solid;
