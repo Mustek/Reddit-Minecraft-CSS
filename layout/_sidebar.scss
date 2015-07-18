@@ -21,11 +21,14 @@ body:not(.search-page) #search {
   border: solid #C1BFBF;
   border-width: 1px 0 !important;
   text-align: center;
-  margin: 10px -10px 10px -20px;
   width: 310px;
   font-size: 140% !important;
   background: rgba(0, 0, 0, 0.59);
   color: white;
+}
+
+body:not(.search-page) #search input[type="text"] {
+  margin: 10px -10px 10px -20px
 }
 
 #previoussearch input[type="text"] {
