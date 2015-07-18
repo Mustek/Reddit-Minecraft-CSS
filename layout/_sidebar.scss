@@ -571,3 +571,9 @@ a[href*="flair:Art"] {
   content: ''
 }
 /** END Minecon countdown **/
+
+/* Make text under sponsorships more visible */
+#ad_sponsorship {
+  background-color: whiteSmoke;
+  padding-bottom: 7px
+}
