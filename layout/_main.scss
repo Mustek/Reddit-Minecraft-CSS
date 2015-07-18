@@ -667,3 +667,26 @@ del a {
   background-position:0 -104px;
   right:-50px
 }
+
+/* Search page */
+.combined-search-page .search-result .search-expando-button {
+  background-color: white;
+  text-align: center
+}
+
+.combined-search-page .search-result .search-expando-button.expanded {
+  background-color: #F5F5F5;
+  border-top: 1px solid #DDD
+}
+
+.combined-search-page .search-result {
+  background-color: #F5F5F5
+}
+
+.combined-search-page .search-submit-button {
+  margin-bottom: 3px
+}
+
+.combined-search-page .searchpane {
+  padding-left: 0
+}
