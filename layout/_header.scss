@@ -36,6 +36,10 @@ input {
   font-variant: small-caps;
 }
 
+.pagename.selected {
+  color: $link-color
+}
+
 /* Header markup */
 
 #sr-header-area {
