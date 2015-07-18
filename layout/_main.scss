@@ -661,8 +661,7 @@ del a {
 
 /* Comment box background image, stolen from /r/AskReddit */
 .commentarea .usertext textarea,.roundfield .usertext-edit textarea {
-  background-image:url("%%commentbox%%");
-  background-repeat:no-repeat;
+  background:url("%%commentbox%%") no-repeat;
   -webkit-transition:background 0.25s linear;
   -moz-transition:background 0.25s linear;
   -o-transition:background 0.25s linear;
@@ -670,6 +669,6 @@ del a {
 }
 
 .commentarea .usertext textarea:focus,.roundfield .usertext-edit textarea:focus {
-  background-position:0 -104px
+  background-position:0 -104px;
   right:-50px
 }

@@ -65,6 +65,8 @@ html:lang(bb) #header { background: url(%%brick%%) bottom left; }
 
 #header-bottom-left .tabmenu li.selected a { border: 0 !important; background: transparent; color: #FF966F; font-weight: bold; }
 
+.message-count { background-color: #6CD94E; }
+
 .login-form-side { background-color: #F5F5F5; border-width: 3px 0 3px 0; border-style: solid; border-color: #C1BFBF; }
 
 .side .bottom { display: none !important; }
@@ -177,7 +179,7 @@ body:not(.search-page) #search { text-align: center; }
 
 .side .tagline { display: block; background-color: #F5F5F5; border: 0 solid #C1BFBF; border-bottom-width: 1px; box-shadow: 0 1px 2px #C0C0C0; margin: 0 0 0 0 !important; padding: 5px; }
 
-.fancy-toggle-button .remove { background: #DD513B none; border-radius: 0 !important; }
+.fancy-toggle-button .remove { background: #DD513B none; border-radius: 0 !important; margin-left: 5px; }
 
 .fancy-toggle-button .add { background: #4D6277 none; border-radius: 0 !important; margin-left: 5px; }
 
@@ -489,6 +491,11 @@ del a { text-decoration: line-through; }
 
 /* Make text under sponsorships more visible */
 #ad_sponsorship #redditthis a { color: white; }
+
+/* Comment box background image, stolen from /r/AskReddit */
+.commentarea .usertext textarea, .roundfield .usertext-edit textarea { background: url("%%commentbox%%") no-repeat; -webkit-transition: background 0.25s linear; -moz-transition: background 0.25s linear; -o-transition: background 0.25s linear; transition: background 0.25s linear; }
+
+.commentarea .usertext textarea:focus, .roundfield .usertext-edit textarea:focus { background-position: 0 -104px; right: -50px; }
 
 /* wiki formatting */
 div.wiki div.toc > ul:before { display: block !important; content: "Table of Contents"; color: #99A; text-align: center; margin-top: -5px; margin-bottom: 5px; }
