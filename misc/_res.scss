@@ -16,6 +16,15 @@
 
 // << Change location of the currently selected element marker
 
+// Fix userbar positioning for RES users
+.res #header-bottom-right {
+  top: 66px !important;
+}
+
+#RESAccountSwitcherIcon {
+  height: 19px;
+}
+
 // >> RES neverending reddit fixes
 #progressIndicator {
   margin-left: 20px !important;
