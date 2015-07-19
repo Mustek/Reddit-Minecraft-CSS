@@ -663,6 +663,10 @@ del a {
   transition:background 0.25s linear
 }
 
+.commentarea .usertext textarea, .roundfield .usertext-edit textarea {
+  background-color:white
+}
+
 .commentarea .usertext textarea:focus,.roundfield .usertext-edit textarea:focus {
   background-position:0 -104px;
   right:-50px
