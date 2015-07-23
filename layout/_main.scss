@@ -598,7 +598,7 @@ body:lang(np):not(.subscriber) .entry.dislikes:not(.reddit-entry):before {
   color: #5C5C5C !important;
 }
 
-.wiki-page .content {
+.wiki-page > .content {
   margin-top: 20px !important;
 }
 
