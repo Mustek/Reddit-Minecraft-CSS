@@ -435,7 +435,7 @@ body div.content {
 
 .formtabs-content {
   border-top: 4px solid #C1BFBF !important;
-  padding-top: 0 !important;
+  padding-top: 2px !important;
 }
 
 .formtabs-content div:nth-child(1), .formtabs-content div:nth-child(2) {
@@ -453,6 +453,34 @@ a.link-button, a.text-button {
   color: #333333 !important;
   border: 1px solid #0E0E0E !important;
   font-size: 120% !important;
+}
+
+.submit-page #suggested-reddits {
+    display: none!important;
+}
+
+.content.submit .info-notice {
+    padding-right: 11px;
+    margin-top: 10px;
+}
+
+/* Moving around stuff on the submit page, from 3ebp9j/c/ctdj45p */
+.submit .formtabs-content {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.submit .spacer:first-child, .submit .spacer:nth-last-child(2) {
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    margin-top: 2px;
+}
+.submit.content .spacer, .submit .roundfield {
+    margin-bottom: 0;
 }
 
 /* Spoiler tags */
@@ -654,23 +682,26 @@ del a {
   background-color: #F5F5F5; padding-bottom: 7px
 }
 
-/* Comment box background image, stolen from /r/AskReddit */
-.commentarea .usertext textarea,.roundfield .usertext-edit textarea {
-  background:url("%%commentbox%%") no-repeat;
-  -webkit-transition:background 0.25s linear;
-  -moz-transition:background 0.25s linear;
-  -o-transition:background 0.25s linear;
-  transition:background 0.25s linear
+/* Comment box background image, inspired by /r/AskReddit */
+body:not(.submit-page) .commentarea .usertext textarea, body:not(.submit-page) .roundfield .usertext-edit textarea {
+  background: url("%%commentbox%%") no-repeat;
+  -webkit-transition: background 1s cubic-bezier(0.4,0,0.2,1) 20s;
+  -moz-transition: background 1s cubic-bezier(0.4,0,0.2,1) 20s;
+  -o-transition: background 1s cubic-bezier(0.4,0,0.2,1) 20s;
+  transition: background 1s cubic-bezier(0.4,0,0.2,1) 20s
 }
-
-.commentarea .usertext textarea, .roundfield .usertext-edit textarea {
+body:not(.submit-page) .commentarea .usertext textarea, body:not(.submit-page) .roundfield .usertext-edit textarea {
   background-color:white
 }
-
-.commentarea .usertext textarea:focus,.roundfield .usertext-edit textarea:focus {
-  background-position:0 -104px;
-  right:-50px
+body:not(.submit-page) .commentarea .usertext textarea:focus, body:not(.submit-page) .roundfield .usertext-edit textarea:focus {
+  -webkit-transition: background 1s cubic-bezier(0.4,0,0.2,1) 0s;
+  -moz-transition: background 1s cubic-bezier(0.4,0,0.2,1) 0s;
+  -o-transition: background 1s cubic-bezier(0.4,0,0.2,1) 0s;
+  transition: background 1s cubic-bezier(0.4,0,0.2,1) 0s;
+  background-position: 0 1000px;
+  background-size: 0
 }
+
 
 /* Search page */
 .combined-search-page .search-result .search-expando-button {
