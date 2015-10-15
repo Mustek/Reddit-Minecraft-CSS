@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!  Boxed reddit CSS Theme v1.5 - (http://www.reddit.com/r/boxed/)
      Changes by /u/Mustek, /u/aperson and /u/redstonehelper. Additional graphics by /u/enchilado
      Source, issues and pull requests: https://github.com/Mustek/Reddit-Minecraft-CSS/
@@ -15,10 +16,12 @@ input { border: 1px solid #C1BFBF !important; }
 
 .hover.pagename.redditname a { display: table-cell; vertical-align: bottom; color: #FFF; font-variant: small-caps; }
 
+.pagename.selected { color: #FFF; }
+
 /* Header markup */
 #sr-header-area { text-transform: lowercase; }
 
-#userbarToggle.userbarHide, #userbarToggle.userbarShow { border: 0; background-color: white; color: black; width: 6px; left: 0 !important; }
+#userbarToggle.userbarHide, #userbarToggle.userbarShow { border: 0; background-color: rgba(255, 255, 255, 0); color: black; width: 6px; line-height: 31px; font-size: 17px; left: -7px !important; }
 
 #userbarToggle.userbarShow { width: 26px !important; text-align: center; }
 
@@ -41,7 +44,7 @@ html:lang(bb) #header { background: url(%%brick%%) bottom left; }
 
 #sr-header-area { background-color: #FAFAFA; color: #333333; border-bottom: 1px solid #9A9A9A !important; }
 
-#header-bottom-right { background-color: #FFFFFF; color: #333333; border: 0 solid #9A9A9A !important; top: 71px !important; /* 400k logo change, this is to be 78px for 400k logo */ height: 21px !important; line-height: 21px !important; vertical-align: middle !important; padding: 3px 25px 2px 5px !important; margin-right: 0; z-index: 1; }
+#header-bottom-right { background-color: rgba(255, 255, 255, 0); color: #333333; border: 0 solid #9A9A9A !important; top: 70px !important; /* 400k logo change, this is to be 78px for 400k logo */ height: 25px !important; line-height: 21px !important; vertical-align: middle !important; padding: 3px 25px 2px 5px !important; margin-right: 0; z-index: 1; }
 
 .pinHeader-subanduser #header-bottom-right { top: 19px !important; }
 
@@ -51,9 +54,9 @@ html:lang(bb) #header { background: url(%%brick%%) bottom left; }
 
 #header-bottom-right a { color: #333333; }
 
-#header-bottom-right #mail { top: -4px !important; bottom: auto; width: 16px; }
+#header-bottom-right #mail { top: -6px !important; bottom: auto; width: 16px; }
 
-#header-bottom-right #modmail { margin: 0; top: -3px !important; bottom: auto; }
+#header-bottom-right #modmail { margin: 0; top: -5px !important; bottom: auto; }
 
 #RESSettingsButton { margin: auto auto 2px; }
 
@@ -64,7 +67,9 @@ html:lang(bb) #header { background: url(%%brick%%) bottom left; }
 
 #header-bottom-left .tabmenu li.selected a { border: 0 !important; background: transparent; color: #FF966F; font-weight: bold; }
 
-.message-count { background-color: #6CD94E; }
+.message-count { background-color: #6CD94E; color: #296D00 !important; font-size: 10px; display: inline; padding: 1px 6px; border-radius: 5px !important; }
+
+.beta-hint a { display: none; }
 
 .login-form-side { background-color: #F5F5F5; border-width: 3px 0 3px 0; border-style: solid; border-color: #C1BFBF; }
 
@@ -74,7 +79,9 @@ body:not(.search-page) #search { text-align: center; }
 
 #search input[type="submit"] { border: none !important; }
 
-#search input[type="text"] { border: solid #C1BFBF; border-width: 1px 0 !important; text-align: center; margin: 10px -10px 10px -20px; width: 310px; font-size: 140% !important; background: rgba(0, 0, 0, 0.59); color: white; }
+#search input[type="text"] { border: solid #C1BFBF; border-width: 1px 0 !important; width: 310px; font-size: 140% !important; background: rgba(0, 0, 0, 0.59); color: white; }
+
+body:not(.search-page) #search input[type="text"] { margin: 10px -10px 10px -20px; }
 
 #previoussearch input[type="text"] { background: #FFF; color: #000; border: 1px solid; }
 
@@ -84,17 +91,20 @@ body:not(.search-page) #search { text-align: center; }
 
 .side .md { overflow: hidden; }
 
-.flat-vert.icon-menu.hover a { background-color: #F5F5F5 !important; }
-
-.side { width: 300px; margin: 30px 20px 20px 10px; padding: 5px !important; z-index: 0; border-left: 1px solid #EDEDED; border-right: 1px solid #EDEDED; box-shadow: 0 1px 3px 1px #C0C0C0; overflow: hidden; background: url(%%grass-new%%) #FFF repeat-x; }
+.side { width: 300px; margin: 30px 5px 0px 0px; padding: 5px !important; z-index: 0; box-shadow: 0 2px 3px 1px #AFABAB; overflow: hidden; background: url(%%grass-new%%) #E7E7E7 repeat-x; }
 
 .side hr { visibility: hidden; }
 
-.side blockquote { display: block; background-color: #F5F5F5; border-width: 1px 0; border-style: solid; border-color: #C1BFBF; margin: 0 0 5px; padding: 5px; box-shadow: 0 1px 2px #C0C0C0; }
+.side blockquote, .side .sidecontentbox { display: block; background-color: #FFF; border: 0; margin: 0 2px; padding: 2px 5px 10px 5px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
-.sidecontentbox .content { display: block; background-color: #F5F5F5; border-width: 1px 0; border-style: solid; border-color: #C1BFBF; box-shadow: 0 1px 2px #C0C0C0; margin: 0 0 5px; padding: 5px; }
+.side .md blockquote { border-left: 0; }
 
-.sidecontentbox a.helplink { margin: 0; }
+.sidecontentbox .title { border-bottom: 1px solid rgba(160, 160, 160, 0.2); padding: 5px 0 6px 3px; font-weight: bold; margin-bottom: 5px; }
+.sidecontentbox .title h1 { font-weight: bold; }
+
+.sidecontentbox .content { display: block; border: 0; margin: 0 0 5px; padding: 0; }
+
+.profile-page .spacer:first-child .titlebox { background-color: white; padding: 5px; border-width: 1px 0; border-style: solid; border-color: #C1BFBF; box-shadow: 0 1px 2px #C0C0C0; }
 
 #searchexpando { color: white; border-radius: 0 !important; border-color: #C1BFBF; background-color: rgba(0, 0, 0, 0.59); width: 314px; margin-left: -12px !important; }
 
@@ -114,9 +124,9 @@ body:not(.search-page) #search { text-align: center; }
 
 .titlebox li li:before { content: '' !important; }
 
-.titlebox ul li:not(.flairsample-left):before { content: 'Ôû╣'; }
+.titlebox ul li:not(.flairsample-left):before { content: 'Γû╣'; }
 
-.titlebox ul li:not(.flairsample-left):hover::before { content: 'Ôû¥'; }
+.titlebox ul li:not(.flairsample-left):hover::before { content: 'Γû╛'; }
 
 .titlebox li:hover li { display: block; }
 
@@ -168,15 +178,13 @@ body:not(.search-page) #search { text-align: center; }
 
 .side a[href='#icon-eye']::before { background-position: -16px -89px; }
 
-.side .redditname { display: block; background-color: #F5F5F5; border: 0 solid #C1BFBF; border-top-width: 1px; margin: 5px 0 0 0; padding: 5px; }
+.side .redditname { display: block; background-color: white; border: 0 solid #C1BFBF; border-top-width: 1px; margin: 5px 0 0 0; padding: 5px; margin-bottom: -27px !important; padding-bottom: 29px !important; }
 
-.side .redditname { margin-bottom: -27px !important; padding-bottom: 29px !important; }
-
-.styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.sr_style_toggle, .toggle.leavecontributor-button { display: block; background-color: #F5F5F5 !important; border: 0; margin: 0; padding: 3px 5px !important; }
+.styleToggle, .subscribers, .users-online, .leavemoderator, form.flairtoggle, .toggle.sr_style_toggle, .toggle.leavecontributor-button { display: block; background-color: white !important; border: 0; margin: 0; padding: 3px 5px !important; }
 
 .subscribers { margin-top: -29px !important; padding-top: 29px !important; }
 
-.side .tagline { display: block; background-color: #F5F5F5; border: 0 solid #C1BFBF; border-bottom-width: 1px; box-shadow: 0 1px 2px #C0C0C0; margin: 0 0 0 0 !important; padding: 5px; }
+.side .tagline { display: block; background-color: white; border: 0 solid #C1BFBF; border-bottom-width: 1px; box-shadow: 0 1px 2px #C0C0C0; margin: 0 0 0 0 !important; padding: 5px; }
 
 .fancy-toggle-button .remove { background: #DD513B none; border-radius: 0 !important; margin-left: 5px; }
 
@@ -192,7 +200,7 @@ body:not(.search-page) #search { text-align: center; }
 
 .RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover { color: white; background: #DD513B none !important; border-radius: 0 !important; }
 
-.side .md h3:nth-of-type(1) { position: absolute; top: 57px; left: 0; display: block; border-bottom: 0; box-shadow: 0 1px 3px 1px #C0C0C0; background: #FFFFFF; text-align: left; color: #333333; font-weight: bold; padding: 7px 7px 6px 27px; right: 0; }
+.side .md h3:nth-of-type(1) { position: absolute; top: 57px; left: 0; display: block; border-bottom: 0; box-shadow: 0 1px 3px 1px #C0C0C0; background: #FFFFFF; text-align: left; color: #333333; font-weight: bold; padding: 7px 7px 6px 27px; right: 0; background: url(%%gaybar%%) no-repeat #FFF; }
 
 .linkinfo { color: #FFF; text-align: center; width: 300px; margin: 5px auto 10px -6px; padding: 10px 5px 15px; border-radius: 0 !important; background-color: rgba(0, 0, 0, 0.6); border: 1px solid #C1BFBF !important; }
 
@@ -266,6 +274,8 @@ a[href*="flair:Art"] { background-position: -256px 0; }
 .side [href*="http://minecon.mojang.com/"] { text-indent: -9999em; display: block; width: 300px; height: 64px; background-image: url(%%minecon%%); content: ""; }
 
 /** END Minecon countdown **/
+.side > .spacer a[href='/account-activity'] { color: red; }
+
 .rounded { border-radius: 0 !important; }
 
 .roundfield, #REScommentSubToggle, #header-bottom-right, #userbarToggle { border-radius: 0 !important; }
@@ -277,8 +287,6 @@ a[href*="flair:Art"] { background-position: -256px 0; }
 body .content .sitetable .thing.spam, body .sitetable .thing.spam.deleted.link.self { border: solid 2px #FA8072 !important; }
 
 body .content .sitetable .thing.spam, body .sitetable .thing.spam.deleted.link.self { border: solid 2px #FA8072 !important; }
-
-.link.last-clicked { border: 0 !important; }
 
 a.title { color: #4D6277 !important; }
 
@@ -301,7 +309,7 @@ a.title:visited:hover { color: #E18879 !important; text-decoration: underline !i
 
 .link .entry li .comments { font-weight: bold; }
 
-body div.content { margin: 10px 320px 0 5px !important; padding: 20px 0 0 !important; }
+body div.content { margin: 10px 300px 0 5px !important; padding: 20px 0 0 !important; }
 
 .rank { display: none; }
 
@@ -323,15 +331,15 @@ body div.content { margin: 10px 320px 0 5px !important; padding: 20px 0 0 !impor
 /* comments */
 .sitetable .comment { border-radius: 0 !important; }
 
-.panestack-title { margin: 0 !important; border-bottom: 1px dotted #808080; background-color: #FFF; box-shadow: 0 3px 3px 1px #C0C0C0; padding: 5px 5px 5px 30px; overflow: auto; }
+.panestack-title { margin: 0 20px 0 0 !important; border-bottom: 1px dotted #808080; background-color: #FFF; box-shadow: 0 3px 3px 1px #C0C0C0; padding: 5px 5px 5px 30px; overflow: auto; }
 
-.commentarea .menuarea, .commentarea .infobar { margin: 0 !important; border: none; color: #808080; background-color: #FFF; box-shadow: 0 3px 3px 1px #C0C0C0; padding: 5px 5px 5px 30px; overflow: auto; }
+.commentarea .menuarea, .commentarea .infobar { margin: 0 20px 0 0 !important; border: none; color: #808080; background-color: #FFF; box-shadow: 0 3px 3px 1px #C0C0C0; padding: 5px 5px 5px 30px; overflow: auto; }
 
-.commentarea > .usertext { margin: 0 !important; overflow: auto; background-color: #FFF; box-shadow: 0 3px 3px 1px #C0C0C0; padding: 5px 5px 5px 30px; }
+.commentarea > .usertext { margin: 0 20px 0 0 !important; overflow: auto; background-color: #FFF; box-shadow: 0 3px 3px 1px #C0C0C0; padding: 5px 5px 5px 30px; }
 
 .pretty-form { padding: 5px 5px 5px 30px; background-color: #FFF; border: 0; box-shadow: 0 1px 3px 1px #C0C0C0; margin-left: 20px !important; overflow: auto; }
 
-.gold-accent.comment-visits-box { color: #583800; padding: 7px 10px 7px 30px; box-shadow: 0 3px 3px 1px #C0C0C0; background-color: #FFF; margin: 0 !important; overflow: auto; display: block; max-width: 100%; border-color: #FFF; }
+.gold-accent.comment-visits-box { color: #583800; padding: 7px 10px 7px 30px; box-shadow: 0 3px 3px 1px #C0C0C0; background-color: #FFF; margin: 0 20px 0 0 !important; overflow: auto; display: block; max-width: 100%; border-color: #FFF; }
 
 .sitetable.nestedlisting > .comment { margin: 0 20px 5px 0 !important; background-color: rgba(255, 255, 255, 0.69) !important; border: 0 !important; padding: 5px 8px 0 5px !important; box-shadow: 0 3px 3px 1px #C0C0C0; overflow: auto; }
 
@@ -341,7 +349,7 @@ body div.content { margin: 10px 320px 0 5px !important; padding: 20px 0 0 !impor
 
 .md h1, .commentarea h1 { padding-bottom: 3px; border-bottom: 1px dotted #C1BFBF; font-weight: bold; }
 
-.md h2, .commentarea h2 { margin-bottom: 10px; padding: 5px 0 10px 3px; border-bottom: 1px dotted #C1BFBF; font-weight: bold; }
+.md h2, .commentarea h2 { margin-bottom: 10px; padding: 5px 0 6px 3px; border-bottom: 1px solid rgba(160, 160, 160, 0.2); font-weight: bold; }
 
 .md h2 a[href*='xpaw.ru'], .md h2 a[href$='rules'] { font-size: 85%; color: #BBB; float: right; font-weight: normal; text-decoration: none; vertical-align: super; }
 
@@ -409,13 +417,24 @@ body div.content { margin: 10px 320px 0 5px !important; padding: 20px 0 0 !impor
 
 .content > h1 { margin: 0 5px 5px 20px; background-color: #FFFFFF; border: 0; box-shadow: 0 1px 3px 1px #C0C0C0; padding: 5px; overflow: auto; }
 
-.formtabs-content { border-top: 4px solid #C1BFBF !important; padding-top: 0 !important; }
+.formtabs-content { border-top: 4px solid #C1BFBF !important; padding-top: 2px !important; }
 
 .formtabs-content div:nth-child(1), .formtabs-content div:nth-child(2) { margin: 0 !important; }
 
 li.selected a.link-button, li.selected a.text-button { background: #0E0E0E !important; color: #FFFFFF !important; border: 1px solid #0E0E0E !important; }
 
 a.link-button, a.text-button { background: #EFEFEF !important; color: #333333 !important; border: 1px solid #0E0E0E !important; font-size: 120% !important; }
+
+.submit-page #suggested-reddits { display: none !important; }
+
+.content.submit .info-notice { padding-right: 11px; margin-top: 10px; }
+
+/* Moving around stuff on the submit page, from 3ebp9j/c/ctdj45p */
+.submit .formtabs-content { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-flex-direction: column; -ms-flex-direction: column; flex-direction: column; }
+
+.submit .spacer:first-child, .submit .spacer:nth-last-child(2) { -webkit-order: -1; -ms-flex-order: -1; order: -1; margin-top: 2px; }
+
+.submit.content .spacer, .submit .roundfield { margin-bottom: 0; }
 
 /* Spoiler tags */
 a[href$="#spoiler"] { background: #4D6277 !important; color: #4D6277 !important; border: 1px solid #4D6277; padding-right: 1px; }
@@ -458,17 +477,17 @@ body:lang(np):not(.subscriber) .entry.likes:not(.reddit-entry):before, body:lang
 .link .entry li .flairselectbtn { font-weight: bold; }
 
 /* This adds a little info box about downvoting */
-.commentarea > div.sitetable:before { content: "Please don't downvote comments based on opinion. The downvote arrow is for comments which add nothing to the discussion and might as well not be there."; display: block; margin: 0 0 10px 0; overflow: auto; background-color: #FFE8DC; padding: 8px; font-size: 13px; border: 1px solid #FCB188; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
+.commentarea > div.sitetable:before { content: "Please don't downvote comments based on opinion. The downvote arrow is for comments which add nothing to the discussion and might as well not be there."; display: block; margin: 0 20px 10px 0; overflow: auto; background-color: #FFE8DC; padding: 8px; font-size: 13px; border: 1px solid #FCB188; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; }
 
 .nav-buttons { margin-top: 6px; }
 
 .spam.link p.title a.title:visited { color: #5C5C5C !important; }
 
-.wiki-page .content { margin-top: 20px !important; }
+.wiki-page > .content { margin-top: 20px !important; }
 
 .titlebox form.flairtoggle { padding-left: 7px; }
 
-h1.hover.redditname { text-align: center; }
+.titlebox > h1 { text-align: center; }
 
 .search-summary { margin-top: 10px !important; }
 
@@ -490,12 +509,30 @@ h1.hover.redditname { text-align: center; }
 del a { text-decoration: line-through; }
 
 /* Make text under sponsorships more visible */
-#ad_sponsorship #redditthis a { color: white; }
+#ad_sponsorship { background-color: #F5F5F5; padding-bottom: 7px; }
 
-/* Comment box background image, stolen from /r/AskReddit */
-.commentarea .usertext textarea, .roundfield .usertext-edit textarea { background: url("%%commentbox%%") no-repeat; -webkit-transition: background 0.25s linear; -moz-transition: background 0.25s linear; -o-transition: background 0.25s linear; transition: background 0.25s linear; }
+/* Comment box background image, inspired by /r/AskReddit */
+body:not(.submit-page) .commentarea .usertext textarea, body:not(.submit-page) .roundfield .usertext-edit textarea { background: url("%%commentbox%%") no-repeat; -webkit-transition: background 1s cubic-bezier(0.4, 0, 0.2, 1) 20s; -moz-transition: background 1s cubic-bezier(0.4, 0, 0.2, 1) 20s; -o-transition: background 1s cubic-bezier(0.4, 0, 0.2, 1) 20s; transition: background 1s cubic-bezier(0.4, 0, 0.2, 1) 20s; }
 
-.commentarea .usertext textarea:focus, .roundfield .usertext-edit textarea:focus { background-position: 0 -104px; right: -50px; }
+body:not(.submit-page) .commentarea .usertext textarea, body:not(.submit-page) .roundfield .usertext-edit textarea { background-color: white; }
+
+body:not(.submit-page) .commentarea .usertext textarea:focus, body:not(.submit-page) .roundfield .usertext-edit textarea:focus { -webkit-transition: background 1s cubic-bezier(0.4, 0, 0.2, 1) 0s; -moz-transition: background 1s cubic-bezier(0.4, 0, 0.2, 1) 0s; -o-transition: background 1s cubic-bezier(0.4, 0, 0.2, 1) 0s; transition: background 1s cubic-bezier(0.4, 0, 0.2, 1) 0s; background-position: 0 1000px; background-size: 0; }
+
+/* Search page */
+.combined-search-page .search-result .search-expando-button { background-color: white; text-align: center; }
+
+.combined-search-page .search-result .search-expando-button.expanded { background-color: #F5F5F5; border-top: 1px solid #DDD; }
+
+.combined-search-page .search-result { background-color: #F5F5F5; }
+
+.combined-search-page .search-submit-button { margin-bottom: 3px; }
+
+.combined-search-page .searchpane { padding-left: 0; }
+
+.search-result > div { margin-left: 10px; }
+
+/* sponsored submissions */
+.organic-listing { margin: 5px 10px 7px 20px; }
 
 /* wiki formatting */
 div.wiki div.toc > ul:before { display: block !important; content: "Table of Contents"; color: #99A; text-align: center; margin-top: -5px; margin-bottom: 5px; }
@@ -521,7 +558,7 @@ body.wiki-page:lang(np):not(.subscriber) span.pageactions a.wikiaction-edit:not(
 /* Hide the submit button */
 .submit-page button.btn { position: absolute !important; top: 167px; right: 60px; }
 
-.submit-page .roundfield.info-notice:after { content: "Looking for something? Read the red box to find the 'submit' button!"; text-align: center; position: absolute; width: 500px; margin: 65px 0 0 -475px; }
+.submit-page .roundfield.info-notice:after { content: "Looking for something? Read the red box to find the 'submit' button!"; text-align: center; position: absolute; width: 500px; margin: 45px 0 0 -475px; }
 
 /* Some color changes */
 .submit_text.enabled { background-color: #F6A39F; font-size: 150%; }
@@ -530,7 +567,7 @@ body.wiki-page:lang(np):not(.subscriber) span.pageactions a.wikiaction-edit:not(
 
 .submit-page.content h1 { display: none; }
 
-form#newlink.submit.content { border-bottom: 30px solid white; }
+form#newlink.submit.content { border-bottom: 20px solid white; }
 
 /* Hide the subreddit they're submitting to. */
 .submit-page > #reddit-field { display: none; }
@@ -542,7 +579,7 @@ form#newlink.submit.content { border-bottom: 30px solid white; }
 
 .tagline .author.moderator::after { content: ", speaking officially"; background-color: transparent !important; }
 
-.tagline .author.moderator.id-t2_6997u::after { content: ", speaking automatically"; }
+.tagline .author.moderator.id-t2_6997u::after, .tagline .author.moderator.id-t2_6l4z3::after { content: ", speaking automatically"; }
 
 .tagline .author.friend { color: white !important; background-color: #FF4500 !important; font-weight: bold !important; border-radius: 0 !important; padding: 0 2px !important; }
 
@@ -723,7 +760,7 @@ div.thing.link:first-child[data-fullname$="z"]:after { content: url(%%herobrineb
 
 .linkflairlabel { padding: 0 2px; height: auto; border-radius: 0; color: #333; font-weight: 700; font-style: normal; font-variant: normal; font-size: 12px; cursor: default; }
 
-.linkflair .title .linkflairlabel { background: url(%%linkflair%%) no-repeat; color: transparent; font-size: 0; right: 365px; margin-top: -8px; height: 81px; max-width: 32px; width: 28px; position: absolute; z-index: 98; border-width: 0 0 0 0; }
+.linkflair .title .linkflairlabel { background: url(%%linkflair%%) no-repeat; color: transparent; font-size: 0; right: 350px; margin-top: -8px; height: 81px; max-width: 32px; width: 28px; position: absolute; z-index: 98; border-width: 0 0 0 0; }
 
 .thing.linkflair, .flairselector { border-right: 10px solid #93A1A1; }
 
@@ -915,7 +952,7 @@ div.thing.link:first-child[data-fullname$="z"]:after { content: url(%%herobrineb
 
 .flair-wabbit { background-position: 0 -1072px; }
 
-.flair-NULL { background-position: 0 -1088px; }
+.flair-ttg { background-position: 0 -1088px; }
 
 .flair-mojangex { background-position: 0 -1104px; }
 
@@ -1843,6 +1880,10 @@ a[href="/rftw"] { background-position: 0px -688px; }
 .keyHighlight, .RES-keyNav-activeElement, div .RES-keyNav-activeElement { outline-width: 0 !important; border-left: 5px solid #AAAAAA; background: transparent !important; }
 
 .RES-keyNav-activeElement { border-left: 0 !important; border-right: 5px solid #AAAAAA; }
+
+.res #header-bottom-right { top: 66px !important; }
+
+#RESAccountSwitcherIcon { height: 19px; }
 
 #progressIndicator { margin-left: 20px !important; border-radius: 0 !important; box-shadow: 0 1px 3px 1px #C0C0C0; width: 97% !important; margin-top: 5px !important; background-color: #F5F5F5; border-color: #C1BFBF !important; }
 

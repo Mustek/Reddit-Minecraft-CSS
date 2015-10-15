@@ -37,7 +37,7 @@
 // Just add the name to the end of the list, the rest happens automagically.
 // ! Make sure to keep them in order of appearance on the spritesheet.
 // TODO: When a new flair gets added, please use the NULL slot first. Thx!
-$flairs: blaze cavespider chicken cow creeper enderdragon enderman ghast steve magmacube mooshroom pig sheep silverfish skeleton slime snowgolem spider squid testificate wolf zombie zombiepigman mojang lightgraysheep graysheep blacksheep brownsheep pinksheep redsheep orangesheep yellowsheep limesheep greensheep lightbluesheep cyansheep bluesheep purplesheep magentasheep ozelot catsiamese catred catblack rftw redstonehelper painting bukkit irongolem lapis gold-hoe zombievillager wither witherskeleton bookquill poweredlamp bat witch musicward purpletile cookie oaksapling horse pufferfish endermite iron-shovel plankton elder wabbit NULL mojangex;
+$flairs: blaze cavespider chicken cow creeper enderdragon enderman ghast steve magmacube mooshroom pig sheep silverfish skeleton slime snowgolem spider squid testificate wolf zombie zombiepigman mojang lightgraysheep graysheep blacksheep brownsheep pinksheep redsheep orangesheep yellowsheep limesheep greensheep lightbluesheep cyansheep bluesheep purplesheep magentasheep ozelot catsiamese catred catblack rftw redstonehelper painting bukkit irongolem lapis gold-hoe zombievillager wither witherskeleton bookquill poweredlamp bat witch musicward purpletile cookie oaksapling horse pufferfish endermite iron-shovel plankton elder wabbit ttg mojangex;
 
 @each $entry in $flairs {
 
