@@ -1,5 +1,5 @@
 .flair {
-  background: url(%%flair%%) no-repeat scroll -9999px -9999px transparent;
+  background: url(%%flair2%%) no-repeat scroll -9999px -9999px transparent;
   height: 16px;
   vertical-align: middle;
   width: 16px;
@@ -28,21 +28,27 @@
   -moz-border-radius: 4px;
   -webkit-border-radius: 4px;
   padding-right: 2px !important
+
 }
 
-@mixin pos($y: 0) {
-  background-position: 0 #{- ($y * 16px)};
+@mixin pos($x: 0, $y: 0) {
+  background-position: #{- ($x * 16px)} #{- ($y * 16px)};
 }
 
-// Just add the name to the end of the list, the rest happens automagically.
-// ! Make sure to keep them in order of appearance on the spritesheet.
-// TODO: When a new flair gets added, please use the NULL slot first. Thx!
-$flairs: blaze cavespider chicken cow creeper enderdragon enderman ghast steve magmacube mooshroom pig sheep silverfish skeleton slime snowgolem spider squid testificate wolf zombie zombiepigman mojang lightgraysheep graysheep blacksheep brownsheep pinksheep redsheep orangesheep yellowsheep limesheep greensheep lightbluesheep cyansheep bluesheep purplesheep magentasheep ozelot catsiamese catred catblack rftw redstonehelper painting bukkit irongolem lapis gold-hoe zombievillager wither witherskeleton bookquill poweredlamp bat witch musicward purpletile cookie oaksapling horse pufferfish endermite iron-shovel plankton elder wabbit ttg mojangex;
+//// Second iteration of the flair spritesheet
+//// ! Make sure to keep them in order of appearance on the spritesheet.
+$flairs: (steve, blaze, cavespider, chicken, cow, creeper, enderdragon, enderman, ghast, magmacube, mooshroom, pig, sheep, silverfish, skeleton), (slime, snowgolem, spider, squid, testificate, wolf, zombie, zombiepigman, mojang, lightgraysheep, graysheep, blacksheep, brownsheep, pinksheep, redsheep), (orangesheep, yellowsheep, limesheep, greensheep, lightbluesheep, cyansheep, bluesheep, purplesheep, magentasheep, ozelot, catsiamese, catred, catblack, rftw, redstonehelper), (painting, irongolem, lapis, zombievillager, wither, witherskeleton, bookquill, poweredlamp, bat, witch, musicward, purpletile, cookie, horse, pufferfish), (endermite, iron-shovel, plankton, elder, wabbit, ttg, mojangex, snowgolem-derp, alex, shulker);
 
-@each $entry in $flairs {
+@each $line in $flairs {
+  @each $entry in $line {
+    $j: index($flairs, $line) - 1;
+    $i: index($line, $entry) - 1;
 
-  $i: index($flairs, $entry) - 1;
-  .flair-#{$entry} {
-    @include pos($i);
+    .flair-#{$entry} {
+      @include pos($i, $j)
+
+    }
+
   }
+
 }
