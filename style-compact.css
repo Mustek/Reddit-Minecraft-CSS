@@ -808,152 +808,154 @@ div.thing.link:first-child[data-fullname$="z"]:after { content: url(%%herobrineb
 .thing.linkflair.linkflair-maps, .flairselector .linkflair-maps { border-right: 10px solid #1CB900; }
 
 /* User Flair */
-.flair { background: url(%%flair2%%) no-repeat scroll -9999px -9999px transparent; height: 16px; vertical-align: middle; width: 16px; border: 0; text-indent: -9999px; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; padding: 0 !important; margin-bottom: 2px; margin-top: 0 !important; font-size: 1.1em !important; }
+.flair { background: transparent; height: 16px; vertical-align: middle; width: 16px; border: 0; text-indent: -9999px; border-radius: 0; -moz-border-radius: 0; -webkit-border-radius: 0; padding: 0 !important; margin-bottom: 2px; margin-top: 0 !important; font-size: 1.1em !important; position: relative; }
+
+.flair::before { background: url(%%flair2%%) no-repeat scroll -9999px -9999px transparent; position: absolute; left: 0; content: ""; width: 16px; height: 16px; }
 
 /* Show the flair text on hover */
 .flair:hover { width: auto; min-width: 16px; text-indent: 18px; }
 
 .flair-rftw:hover { background-color: #184E13 !important; color: white; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; padding-right: 2px !important; }
 
-.flair-steve { background-position: 0px 0px; }
+.flair-steve::before { background-position: 0px 0px; }
 
-.flair-blaze { background-position: -16px 0px; }
+.flair-blaze::before { background-position: -16px 0px; }
 
-.flair-cavespider { background-position: -32px 0px; }
+.flair-cavespider::before { background-position: -32px 0px; }
 
-.flair-chicken { background-position: -48px 0px; }
+.flair-chicken::before { background-position: -48px 0px; }
 
-.flair-cow { background-position: -64px 0px; }
+.flair-cow::before { background-position: -64px 0px; }
 
-.flair-creeper { background-position: -80px 0px; }
+.flair-creeper::before { background-position: -80px 0px; }
 
-.flair-enderdragon { background-position: -96px 0px; }
+.flair-enderdragon::before { background-position: -96px 0px; }
 
-.flair-enderman { background-position: -112px 0px; }
+.flair-enderman::before { background-position: -112px 0px; }
 
-.flair-ghast { background-position: -128px 0px; }
+.flair-ghast::before { background-position: -128px 0px; }
 
-.flair-magmacube { background-position: -144px 0px; }
+.flair-magmacube::before { background-position: -144px 0px; }
 
-.flair-mooshroom { background-position: -160px 0px; }
+.flair-mooshroom::before { background-position: -160px 0px; }
 
-.flair-pig { background-position: -176px 0px; }
+.flair-pig::before { background-position: -176px 0px; }
 
-.flair-sheep { background-position: -192px 0px; }
+.flair-sheep::before { background-position: -192px 0px; }
 
-.flair-silverfish { background-position: -208px 0px; }
+.flair-silverfish::before { background-position: -208px 0px; }
 
-.flair-skeleton { background-position: -224px 0px; }
+.flair-skeleton::before { background-position: -224px 0px; }
 
-.flair-slime { background-position: 0px -16px; }
+.flair-slime::before { background-position: 0px -16px; }
 
-.flair-snowgolem { background-position: -16px -16px; }
+.flair-snowgolem::before { background-position: -16px -16px; }
 
-.flair-spider { background-position: -32px -16px; }
+.flair-spider::before { background-position: -32px -16px; }
 
-.flair-squid { background-position: -48px -16px; }
+.flair-squid::before { background-position: -48px -16px; }
 
-.flair-testificate { background-position: -64px -16px; }
+.flair-testificate::before { background-position: -64px -16px; }
 
-.flair-wolf { background-position: -80px -16px; }
+.flair-wolf::before { background-position: -80px -16px; }
 
-.flair-zombie { background-position: -96px -16px; }
+.flair-zombie::before { background-position: -96px -16px; }
 
-.flair-zombiepigman { background-position: -112px -16px; }
+.flair-zombiepigman::before { background-position: -112px -16px; }
 
-.flair-mojang { background-position: -128px -16px; }
+.flair-mojang::before { background-position: -128px -16px; }
 
-.flair-lightgraysheep { background-position: -144px -16px; }
+.flair-lightgraysheep::before { background-position: -144px -16px; }
 
-.flair-graysheep { background-position: -160px -16px; }
+.flair-graysheep::before { background-position: -160px -16px; }
 
-.flair-blacksheep { background-position: -176px -16px; }
+.flair-blacksheep::before { background-position: -176px -16px; }
 
-.flair-brownsheep { background-position: -192px -16px; }
+.flair-brownsheep::before { background-position: -192px -16px; }
 
-.flair-pinksheep { background-position: -208px -16px; }
+.flair-pinksheep::before { background-position: -208px -16px; }
 
-.flair-redsheep { background-position: -224px -16px; }
+.flair-redsheep::before { background-position: -224px -16px; }
 
-.flair-orangesheep { background-position: 0px -32px; }
+.flair-orangesheep::before { background-position: 0px -32px; }
 
-.flair-yellowsheep { background-position: -16px -32px; }
+.flair-yellowsheep::before { background-position: -16px -32px; }
 
-.flair-limesheep { background-position: -32px -32px; }
+.flair-limesheep::before { background-position: -32px -32px; }
 
-.flair-greensheep { background-position: -48px -32px; }
+.flair-greensheep::before { background-position: -48px -32px; }
 
-.flair-lightbluesheep { background-position: -64px -32px; }
+.flair-lightbluesheep::before { background-position: -64px -32px; }
 
-.flair-cyansheep { background-position: -80px -32px; }
+.flair-cyansheep::before { background-position: -80px -32px; }
 
-.flair-bluesheep { background-position: -96px -32px; }
+.flair-bluesheep::before { background-position: -96px -32px; }
 
-.flair-purplesheep { background-position: -112px -32px; }
+.flair-purplesheep::before { background-position: -112px -32px; }
 
-.flair-magentasheep { background-position: -128px -32px; }
+.flair-magentasheep::before { background-position: -128px -32px; }
 
-.flair-ozelot { background-position: -144px -32px; }
+.flair-ozelot::before { background-position: -144px -32px; }
 
-.flair-catsiamese { background-position: -160px -32px; }
+.flair-catsiamese::before { background-position: -160px -32px; }
 
-.flair-catred { background-position: -176px -32px; }
+.flair-catred::before { background-position: -176px -32px; }
 
-.flair-catblack { background-position: -192px -32px; }
+.flair-catblack::before { background-position: -192px -32px; }
 
-.flair-rftw { background-position: -208px -32px; }
+.flair-rftw::before { background-position: -208px -32px; }
 
-.flair-redstonehelper { background-position: -224px -32px; }
+.flair-redstonehelper::before { background-position: -224px -32px; }
 
-.flair-painting { background-position: 0px -48px; }
+.flair-painting::before { background-position: 0px -48px; }
 
-.flair-irongolem { background-position: -16px -48px; }
+.flair-irongolem::before { background-position: -16px -48px; }
 
-.flair-lapis { background-position: -32px -48px; }
+.flair-lapis::before { background-position: -32px -48px; }
 
-.flair-zombievillager { background-position: -48px -48px; }
+.flair-zombievillager::before { background-position: -48px -48px; }
 
-.flair-wither { background-position: -64px -48px; }
+.flair-wither::before { background-position: -64px -48px; }
 
-.flair-witherskeleton { background-position: -80px -48px; }
+.flair-witherskeleton::before { background-position: -80px -48px; }
 
-.flair-bookquill { background-position: -96px -48px; }
+.flair-bookquill::before { background-position: -96px -48px; }
 
-.flair-poweredlamp { background-position: -112px -48px; }
+.flair-poweredlamp::before { background-position: -112px -48px; }
 
-.flair-bat { background-position: -128px -48px; }
+.flair-bat::before { background-position: -128px -48px; }
 
-.flair-witch { background-position: -144px -48px; }
+.flair-witch::before { background-position: -144px -48px; }
 
-.flair-musicward { background-position: -160px -48px; }
+.flair-musicward::before { background-position: -160px -48px; }
 
-.flair-purpletile { background-position: -176px -48px; }
+.flair-purpletile::before { background-position: -176px -48px; }
 
-.flair-cookie { background-position: -192px -48px; }
+.flair-cookie::before { background-position: -192px -48px; }
 
-.flair-horse { background-position: -208px -48px; }
+.flair-horse::before { background-position: -208px -48px; }
 
-.flair-pufferfish { background-position: -224px -48px; }
+.flair-pufferfish::before { background-position: -224px -48px; }
 
-.flair-endermite { background-position: 0px -64px; }
+.flair-endermite::before { background-position: 0px -64px; }
 
-.flair-iron-shovel { background-position: -16px -64px; }
+.flair-iron-shovel::before { background-position: -16px -64px; }
 
-.flair-plankton { background-position: -32px -64px; }
+.flair-plankton::before { background-position: -32px -64px; }
 
-.flair-elder { background-position: -48px -64px; }
+.flair-elder::before { background-position: -48px -64px; }
 
-.flair-wabbit { background-position: -64px -64px; }
+.flair-wabbit::before { background-position: -64px -64px; }
 
-.flair-ttg { background-position: -80px -64px; }
+.flair-ttg::before { background-position: -80px -64px; }
 
-.flair-mojangex { background-position: -96px -64px; }
+.flair-mojangex::before { background-position: -96px -64px; }
 
-.flair-snowgolem-derp { background-position: -112px -64px; }
+.flair-snowgolem-derp::before { background-position: -112px -64px; }
 
-.flair-alex { background-position: -128px -64px; }
+.flair-alex::before { background-position: -128px -64px; }
 
-.flair-shulker { background-position: -144px -64px; }
+.flair-shulker::before { background-position: -144px -64px; }
 
 /* Sprites (Big blob, sorry :D) */
 .items, a[href="/blank"], a[href="/l_helm"], a[href="/l_chest"], a[href="/l_pants"], a[href="/l_boots"], a[href="/w_sword"], a[href="/w_shovel"], a[href="/w_pick"], a[href="/w_axe"], a[href="/w_hoe"], a[href="/cm_helm"], a[href="/cm_chest"], a[href="/cm_pants"], a[href="/cm_boots"], a[href="/s_sword"], a[href="/s_shovel"], a[href="/s_pick"], a[href="/s_axe"], a[href="/s_hoe"], a[href="/i_helm"], a[href="/i_chest"], a[href="/i_pants"], a[href="/i_boots"], a[href="/i_sword"], a[href="/i_shovel"], a[href="/i_pick"], a[href="/i_axe"], a[href="/i_hoe"], a[href="/d_helm"], a[href="/d_chest"], a[href="/d_pants"], a[href="/d_boots"], a[href="/d_sword"], a[href="/d_shovel"], a[href="/d_pick"], a[href="/d_axe"], a[href="/d_hoe"], a[href="/g_helm"], a[href="/g_chest"], a[href="/g_pants"], a[href="/g_boots"], a[href="/g_sword"], a[href="/g_shovel"], a[href="/g_pick"], a[href="/g_axe"], a[href="/g_hoe"], a[href="/flint_steel"], a[href="/bow"], a[href="/arrow"], a[href="/stick"], a[href="/fish_pole"], a[href="/fish_pole2"], a[href="/bow_arrow"], a[href="/bow_arrow2"], a[href="/bow_arrow3"], a[href="/flint"], a[href="/brick"], a[href="/quiver"], a[href="/compass"], a[href="/watch"], a[href="/repeater"], a[href="/coal"], a[href="/i_ingot"], a[href="/g_ingot"], a[href="/diamond"], a[href="/bowl"], a[href="/pork"], a[href="/leather"], a[href="/minecart"], a[href="/s_minecart"], a[href="/f_minecart"], a[href="/string"], a[href="/feather"], a[href="/gunpowder"], a[href="/redstone"], a[href="/s_bowl"], a[href="/c_pork"], a[href="/saddle"], a[href="/boat"], a[href="/seeds"], a[href="/wheat"], a[href="/bread"], a[href="/clay"], a[href="/gs_dust"], a[href="/fish"], a[href="/beef"], a[href="/r_chicken"], a[href="/g_melon"], a[href="/apple"], a[href="/painting"], a[href="/sign"], a[href="/paper"], a[href="/bucket"], a[href="/c_fish"], a[href="/steak"], a[href="/c_chicken"], a[href="/f_s_eye"], a[href="/ruby"], a[href="/emerald"], a[href="/g_apple"], a[href="/sugarcane"], a[href="/w_door"], a[href="/book"], a[href="/w_bucket"], a[href="/r_flesh"], a[href="/e_pearl"], a[href="/g_tear"], a[href="/s_eye"], a[href="/e_eye"], a[href="/bottle_enchanting"], a[href="/book_quill"], a[href="/egg"], a[href="/bone"], a[href="/i_door"], a[href="/map"], a[href="/l_bucket"], a[href="/cookie"], a[href="/b_rod"], a[href="/g_nugget"], a[href="/bottle"], a[href="/cauldron"], a[href="/b_stand"], a[href="/book_written"], a[href="/sugar"], a[href="/cake"], a[href="/bed"], a[href="/p_seeds"], a[href="/m_bucket"], a[href="/shears"], a[href="/melon_s"], a[href="/n_wart"], a[href="/b_powder"], a[href="/m_cream"], a[href="/snowball"], a[href="/slimeball"], a[href="/fireball"], a[href="/m_seeds"], a[href="/ink_sac"], a[href="/r_red"], a[href="/c_green"], a[href="/cocoa_b"], a[href="/lapis"], a[href="/pu_dye"], a[href="/c_dye"], a[href="/lg_dye"], a[href="/g_dye"], a[href="/pi_dye"], a[href="/l_dye"], a[href="/d_yellow"], a[href="/lb_dye"], a[href="/m_dye"], a[href="/o_dye"], a[href="/bonemeal"], a[href="/m_13"], a[href="/m_cat"], a[href="/m_blocks"], a[href="/m_chirp"], a[href="/m_far"], a[href="/m_mall"], a[href="/m_mellohi"], a[href="/m_stal"], a[href="/m_strad"], a[href="/m_ward"], a[href="/m_11"] { width: 16px; height: 16px; content: " "; background-image: url(%%items%%); display: inline-block; cursor: default; }
