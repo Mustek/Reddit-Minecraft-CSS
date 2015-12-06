@@ -54,7 +54,7 @@ body:not(.search-page) #search input[type="text"] {
 
 .side {
   width: 300px;
-  margin: 30px 5px 0px 0px;
+  margin: 30px 5px 0 0;
   padding: 5px !important;
   z-index: 0;
   box-shadow: 0 2px 3px 1px #AFABAB;
@@ -358,19 +358,17 @@ body:not(.search-page) #search input[type="text"] {
 // Sticky, edit text in the sidebar
 .side .md h3:nth-of-type(1) {
   position: absolute;
-  top: 57px;
+  top: 58px;
   left: 0;
   display: block;
   border-bottom: 0;
   box-shadow: 0 1px 3px 1px #C0C0C0;
-  background: #FFFFFF;
   text-align: left;
-
   color: #333333;
   font-weight: bold;
-  padding: 7px 7px 6px 27px;
+  padding: 7px 7px 2px 27px;
   right: 0;
-  background: url(%%gaybar%%) no-repeat #FFF;
+  background: url(%%frbar%%) no-repeat #FFF;
 }
 
 // Link info (Votes + short url)
