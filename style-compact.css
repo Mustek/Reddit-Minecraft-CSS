@@ -1,5 +1,5 @@
 /*!  Boxed reddit CSS Theme v1.5 - (http://www.reddit.com/r/boxed/)
-     Changes by /u/Mustek, /u/aperson and /u/redstonehelper. Additional graphics by /u/enchilado
+     Changes by /u/Mustek, /u/aperson, /u/redstonehelper and /u/ploshy. Additional graphics by /u/enchilado
      Source, issues and pull requests: https://github.com/Mustek/Reddit-Minecraft-CSS/
 */
 /* General markup */
@@ -90,7 +90,7 @@ body:not(.search-page) #search input[type="text"] { margin: 10px -10px 10px -20p
 
 .side .md { overflow: hidden; }
 
-.side { width: 300px; margin: 30px 5px 0px 0px; padding: 5px !important; z-index: 0; box-shadow: 0 2px 3px 1px #AFABAB; overflow: hidden; background: url(%%grass-new%%) #E7E7E7 repeat-x; }
+.side { width: 300px; margin: 30px 5px 0 0; padding: 5px !important; z-index: 0; box-shadow: 0 2px 3px 1px #AFABAB; overflow: hidden; background: url(%%grass-new%%) #E7E7E7 repeat-x; }
 
 .side hr { visibility: hidden; }
 
@@ -199,7 +199,7 @@ body:not(.search-page) #search input[type="text"] { margin: 10px -10px 10px -20p
 
 .RESshortcutside.remove:hover, .RESDashboardToggle.remove:hover { color: white; background: #DD513B none !important; border-radius: 0 !important; }
 
-.side .md h3:nth-of-type(1) { position: absolute; top: 57px; left: 0; display: block; border-bottom: 0; box-shadow: 0 1px 3px 1px #C0C0C0; background: #FFFFFF; text-align: left; color: #333333; font-weight: bold; padding: 7px 7px 6px 27px; right: 0; background: url(%%gaybar%%) no-repeat #FFF; }
+.side .md h3:nth-of-type(1) { position: absolute; top: 58px; left: 0; display: block; border-bottom: 0; box-shadow: 0 1px 3px 1px #C0C0C0; text-align: left; color: #333333; font-weight: bold; padding: 7px 7px 2px 27px; right: 0; background: url(%%frbar%%) no-repeat #FFF; }
 
 .linkinfo { color: #FFF; text-align: center; width: 300px; margin: 5px auto 10px -6px; padding: 10px 5px 15px; border-radius: 0 !important; background-color: rgba(0, 0, 0, 0.6); border: 1px solid #C1BFBF !important; }
 
@@ -531,7 +531,7 @@ body:not(.submit-page) .commentarea .usertext textarea:focus, body:not(.submit-p
 .search-result > div { margin-left: 10px; }
 
 /* sponsored submissions */
-.organic-listing { margin: 5px 10px 7px 20px; }
+.organic-listing { margin: -2px 25px 7px 20px !important; }
 
 /* wiki formatting */
 div.wiki div.toc > ul:before { display: block !important; content: "Table of Contents"; color: #99A; text-align: center; margin-top: -5px; margin-bottom: 5px; }
@@ -956,6 +956,8 @@ div.thing.link:first-child[data-fullname$="z"]:after { content: url(%%herobrineb
 .flair-alex::before { background-position: -128px -64px; }
 
 .flair-shulker::before { background-position: -144px -64px; }
+
+.flair-gold-hoe::before { background-position: -160px -64px; }
 
 /* Sprites (Big blob, sorry :D) */
 .items, a[href="/blank"], a[href="/l_helm"], a[href="/l_chest"], a[href="/l_pants"], a[href="/l_boots"], a[href="/w_sword"], a[href="/w_shovel"], a[href="/w_pick"], a[href="/w_axe"], a[href="/w_hoe"], a[href="/cm_helm"], a[href="/cm_chest"], a[href="/cm_pants"], a[href="/cm_boots"], a[href="/s_sword"], a[href="/s_shovel"], a[href="/s_pick"], a[href="/s_axe"], a[href="/s_hoe"], a[href="/i_helm"], a[href="/i_chest"], a[href="/i_pants"], a[href="/i_boots"], a[href="/i_sword"], a[href="/i_shovel"], a[href="/i_pick"], a[href="/i_axe"], a[href="/i_hoe"], a[href="/d_helm"], a[href="/d_chest"], a[href="/d_pants"], a[href="/d_boots"], a[href="/d_sword"], a[href="/d_shovel"], a[href="/d_pick"], a[href="/d_axe"], a[href="/d_hoe"], a[href="/g_helm"], a[href="/g_chest"], a[href="/g_pants"], a[href="/g_boots"], a[href="/g_sword"], a[href="/g_shovel"], a[href="/g_pick"], a[href="/g_axe"], a[href="/g_hoe"], a[href="/flint_steel"], a[href="/bow"], a[href="/arrow"], a[href="/stick"], a[href="/fish_pole"], a[href="/fish_pole2"], a[href="/bow_arrow"], a[href="/bow_arrow2"], a[href="/bow_arrow3"], a[href="/flint"], a[href="/brick"], a[href="/quiver"], a[href="/compass"], a[href="/watch"], a[href="/repeater"], a[href="/coal"], a[href="/i_ingot"], a[href="/g_ingot"], a[href="/diamond"], a[href="/bowl"], a[href="/pork"], a[href="/leather"], a[href="/minecart"], a[href="/s_minecart"], a[href="/f_minecart"], a[href="/string"], a[href="/feather"], a[href="/gunpowder"], a[href="/redstone"], a[href="/s_bowl"], a[href="/c_pork"], a[href="/saddle"], a[href="/boat"], a[href="/seeds"], a[href="/wheat"], a[href="/bread"], a[href="/clay"], a[href="/gs_dust"], a[href="/fish"], a[href="/beef"], a[href="/r_chicken"], a[href="/g_melon"], a[href="/apple"], a[href="/painting"], a[href="/sign"], a[href="/paper"], a[href="/bucket"], a[href="/c_fish"], a[href="/steak"], a[href="/c_chicken"], a[href="/f_s_eye"], a[href="/ruby"], a[href="/emerald"], a[href="/g_apple"], a[href="/sugarcane"], a[href="/w_door"], a[href="/book"], a[href="/w_bucket"], a[href="/r_flesh"], a[href="/e_pearl"], a[href="/g_tear"], a[href="/s_eye"], a[href="/e_eye"], a[href="/bottle_enchanting"], a[href="/book_quill"], a[href="/egg"], a[href="/bone"], a[href="/i_door"], a[href="/map"], a[href="/l_bucket"], a[href="/cookie"], a[href="/b_rod"], a[href="/g_nugget"], a[href="/bottle"], a[href="/cauldron"], a[href="/b_stand"], a[href="/book_written"], a[href="/sugar"], a[href="/cake"], a[href="/bed"], a[href="/p_seeds"], a[href="/m_bucket"], a[href="/shears"], a[href="/melon_s"], a[href="/n_wart"], a[href="/b_powder"], a[href="/m_cream"], a[href="/snowball"], a[href="/slimeball"], a[href="/fireball"], a[href="/m_seeds"], a[href="/ink_sac"], a[href="/r_red"], a[href="/c_green"], a[href="/cocoa_b"], a[href="/lapis"], a[href="/pu_dye"], a[href="/c_dye"], a[href="/lg_dye"], a[href="/g_dye"], a[href="/pi_dye"], a[href="/l_dye"], a[href="/d_yellow"], a[href="/lb_dye"], a[href="/m_dye"], a[href="/o_dye"], a[href="/bonemeal"], a[href="/m_13"], a[href="/m_cat"], a[href="/m_blocks"], a[href="/m_chirp"], a[href="/m_far"], a[href="/m_mall"], a[href="/m_mellohi"], a[href="/m_stal"], a[href="/m_strad"], a[href="/m_ward"], a[href="/m_11"] { width: 16px; height: 16px; content: " "; background-image: url(%%items%%); display: inline-block; cursor: default; }
