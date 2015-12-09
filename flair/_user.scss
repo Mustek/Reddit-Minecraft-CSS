@@ -47,7 +47,7 @@
 
 //// Second iteration of the flair spritesheet
 //// ! Make sure to keep them in order of appearance on the spritesheet.
-$flairs: (steve, blaze, cavespider, chicken, cow, creeper, enderdragon, enderman, ghast, magmacube, mooshroom, pig, sheep, silverfish, skeleton), (slime, snowgolem, spider, squid, testificate, wolf, zombie, zombiepigman, mojang, lightgraysheep, graysheep, blacksheep, brownsheep, pinksheep, redsheep), (orangesheep, yellowsheep, limesheep, greensheep, lightbluesheep, cyansheep, bluesheep, purplesheep, magentasheep, ozelot, catsiamese, catred, catblack, rftw, redstonehelper), (painting, irongolem, lapis, zombievillager, wither, witherskeleton, bookquill, poweredlamp, bat, witch, musicward, purpletile, cookie, horse, pufferfish), (endermite, iron-shovel, plankton, elder, wabbit, ttg, mojangex, snowgolem-derp, alex, shulker);
+$flairs: (steve, blaze, cavespider, chicken, cow, creeper, enderdragon, enderman, ghast, magmacube, mooshroom, pig, sheep, silverfish, skeleton), (slime, snowgolem, spider, squid, testificate, wolf, zombie, zombiepigman, mojang, lightgraysheep, graysheep, blacksheep, brownsheep, pinksheep, redsheep), (orangesheep, yellowsheep, limesheep, greensheep, lightbluesheep, cyansheep, bluesheep, purplesheep, magentasheep, ozelot, catsiamese, catred, catblack, rftw, redstonehelper), (painting, irongolem, lapis, zombievillager, wither, witherskeleton, bookquill, poweredlamp, bat, witch, musicward, purpletile, cookie, horse, pufferfish), (endermite, iron-shovel, plankton, elder, wabbit, ttg, mojangex, snowgolem-derp, alex, shulker, gold-hoe);
 
 @each $line in $flairs {
   @each $entry in $line {
