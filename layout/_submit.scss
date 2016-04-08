@@ -5,12 +5,11 @@
   right: 60px;
 }
 
-.submit-page .roundfield.info-notice:after {
+.submit-page .roundfield.info-notice:before {
   content: "Looking for something? Read the red box to find the 'submit' button!";
   text-align: center;
   position: absolute;
-  width: 500px;
-  margin: 45px 0 0 -475px;
+  margin: 45px 0 0 0;
 }
 
 /* Some color changes */

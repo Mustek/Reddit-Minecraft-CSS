@@ -62,3 +62,18 @@ $flairs: (steve, blaze, cavespider, chicken, cow, creeper, enderdragon, enderman
   }
 
 }
+
+// The Mojang Flair Special™
+.flair-mojang {
+    background: #F8BBD0;
+    color: #333;
+    font-size: 81% !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-indent: 18px;
+    border: 1px solid #F48FB1;
+    padding: 0 5px 0 0 !important;
+    text-shadow: 1px 1px 1px rgba(218, 218, 218, 0.7);
+    line-height: 200%;
+    width: auto;
+}
