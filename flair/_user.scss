@@ -47,7 +47,7 @@
 
 //// Second iteration of the flair spritesheet
 //// ! Make sure to keep them in order of appearance on the spritesheet.
-$flairs: (steve, blaze, cavespider, chicken, cow, creeper, enderdragon, enderman, ghast, magmacube, mooshroom, pig, sheep, silverfish, skeleton), (slime, snowgolem, spider, squid, testificate, wolf, zombie, zombiepigman, mojang, lightgraysheep, graysheep, blacksheep, brownsheep, pinksheep, redsheep), (orangesheep, yellowsheep, limesheep, greensheep, lightbluesheep, cyansheep, bluesheep, purplesheep, magentasheep, ozelot, catsiamese, catred, catblack, rftw, redstonehelper), (painting, irongolem, lapis, zombievillager, wither, witherskeleton, bookquill, poweredlamp, bat, witch, musicward, purpletile, cookie, horse, pufferfish), (endermite, iron-shovel, plankton, elder, wabbit, ttg, mojangex, snowgolem-derp, alex, shulker, gold-hoe, bear, mojang2, stray, husk);
+$flairs: (steve, blaze, cavespider, chicken, cow, creeper, enderdragon, enderman, ghast, magmacube, mooshroom, pig, sheep, silverfish, skeleton), (slime, snowgolem, spider, squid, testificate, wolf, zombie, zombiepigman, mojang, lightgraysheep, graysheep, blacksheep, brownsheep, pinksheep, redsheep), (orangesheep, yellowsheep, limesheep, greensheep, lightbluesheep, cyansheep, bluesheep, purplesheep, magentasheep, ozelot, catsiamese, catred, catblack, rftw, redstonehelper), (painting, irongolem, lapis, zombievillager, wither, witherskeleton, bookquill, poweredlamp, bat, witch, musicward, purpletile, cookie, horse, pufferfish), (endermite, iron-shovel, plankton, elder, wabbit, ttg, mojangex, snowgolem-derp, alex, shulker, gold-hoe, bear, mojang2, stray, husk), (microsoft, illager, vex, llama, parrot);
 
 @each $line in $flairs {
   @each $entry in $line {
@@ -76,4 +76,22 @@ $flairs: (steve, blaze, cavespider, chicken, cow, creeper, enderdragon, enderman
     text-shadow: 1px 1px 1px rgba(218, 218, 218, 0.7);
     line-height: 200%;
     width: auto;
+}
+
+.flair-microsoft2::before {
+  background-position: 0px -80px;
+}
+
+.flair-microsoft2 {
+  background: #cdfffd;
+  color: #333;
+  font-size: 81% !important;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-indent: 18px;
+  border: 1px solid #b2b4e8;
+  padding: 0 5px 0 0 !important;
+  text-shadow: 1px 1px 1px rgba(218, 218, 218, 0.7);
+  line-height: 200%;
+  width: auto;
 }
