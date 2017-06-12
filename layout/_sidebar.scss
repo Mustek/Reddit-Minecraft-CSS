@@ -564,11 +564,11 @@ a[href*="flair:Art"] {
   margin: -5px 60px 0 60px !important;
   padding: 0 0 5px 0;
   border-radius: 0 0 10px 10px !important;
-  background: url(%%minecon-bg%%) white 0 0 no-repeat;
+  background: url(%%minecon-bg%%) white 0 -20px no-repeat;
   text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white
 }
 
-.side [href*="http://minecon.mojang.com/"] {
+.side [href*="https://minecon.minecraft.net"] {
   text-indent: -9999em;
   display: block;
   width: 300px;

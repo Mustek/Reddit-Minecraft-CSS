@@ -146,8 +146,14 @@ html:lang(bb) #header {
 
 #header-bottom-right #modmail {
   margin: 0;
-
   top: -5px !important;
+  bottom: auto;
+}
+
+/** Fix new modmail icon **/
+#header-bottom-right #new_modmail {
+  margin: 0;
+  top: -2px !important;
   bottom: auto;
 }
 
@@ -191,5 +197,5 @@ html:lang(bb) #header {
 
 // Fix the BETA icon
 .beta-hint a {
-display: none;
+  display: none;
 }

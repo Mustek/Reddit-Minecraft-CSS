@@ -110,7 +110,7 @@ body div.content {
 
 .linklisting .even:not(.res-nightmode) {
   overflow: hidden !important;
-  margin: 0 !important;
+  margin: 0;
   padding: 5px 5px 10px 10px !important;
   background-color: rgba(250, 250, 250, 0.8);
   min-height: 50px !important;
@@ -679,7 +679,7 @@ del a {
 
 /* Make text under sponsorships more visible */
 #ad_sponsorship {
-  background-color: #F5F5F5; padding-bottom: 7px
+  background-color: #F5F5F5;
 }
 
 /* Comment box background image, inspired by /r/AskReddit */
