@@ -5,6 +5,8 @@
   background-image: url(%%terrain%%);
   display: inline-block;
   cursor: default;
+  font-size: 0;
+  color: transparent;
 }
 
 .slabs {

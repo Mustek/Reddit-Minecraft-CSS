@@ -7,6 +7,8 @@
   background-image: url(%%items%%);
   display: inline-block;
   cursor: default;
+  font-size: 0;
+  color: transparent;
 }
 
 .usertext-body a {

@@ -5,6 +5,8 @@
   background-image: url(%%redstone%%);
   display: inline-block;
   cursor: default;
+  font-size: 0;
+  color: transparent;
 }
 
 @mixin pos($x: 0, $y: 0) {

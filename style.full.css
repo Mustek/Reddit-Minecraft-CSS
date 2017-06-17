@@ -2074,7 +2074,9 @@ div.thing.link:first-child[data-fullname$="z"]:after {
   content: " ";
   background-image: url(%%items%%);
   display: inline-block;
-  cursor: default; }
+  cursor: default;
+  font-size: 0;
+  color: transparent; }
 
 .usertext-body a {
   display: inline-block; }
@@ -2577,7 +2579,9 @@ a[href="/m_11"] {
   content: " ";
   background-image: url(%%terrain%%);
   display: inline-block;
-  cursor: default; }
+  cursor: default;
+  font-size: 0;
+  color: transparent; }
 
 .slabs, a[href="/half_slab_stone_bottom"], a[href="/half_slab_sandstone_bottom"], a[href="/half_slab_plank_bottom"], a[href="/half_slab_cobblestone_bottom"], a[href="/half_slab_brick_bottom"], a[href="/half_slab_stone_brick_bottom"], a[href="/half_slab_stone_top"], a[href="/half_slab_sandstone_top"], a[href="/half_slab_plank_top"], a[href="/half_slab_cobblestone_top"], a[href="/half_slab_brick_top"], a[href="/half_slab_stone_brick_top"], a[href="/half_slab_plank_1_top"], a[href="/half_slab_plank_1_bottom"], a[href="/half_slab_plank_2_top"], a[href="/half_slab_plank_2_bottom"], a[href="/half_slab_plank_3_top"], a[href="/half_slab_plank_3_bottom"] {
   height: 8px; }
@@ -3302,7 +3306,9 @@ a[href="/ldetector_bottom"] {
   content: " ";
   background-image: url(%%flair%%);
   display: inline-block;
-  cursor: default; }
+  cursor: default;
+  font-size: 0;
+  color: transparent; }
 
 .usertext-body a {
   display: inline-block; }
